@@ -1,0 +1,111 @@
+.tudo{ 
+	width: 80%;
+	background-color: rgba(231, 231, 231, 0.61);
+}
+
+body{
+	justify-content: center;
+	display: flex;
+    background-color:rgba(231, 231, 231, 0.61);
+}
+
+h1{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+li{
+    margin-top: 10px;
+}
+
+.titulo{
+    width: 100%;
+    text-align: center;
+}
+
+.divimagem{
+    width: 15%;
+    float: left;
+    margin-left: 30px;
+}
+
+#foto-perfil{
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+}
+
+.dados{
+    width: 80%;
+    float: right;
+    padding-top: 30px;
+}
+
+}
+
+.text{
+    margin-left: 40px;
+}
+
+.textdados{
+    margin-top: 40px;
+}
+
+.divparagrafo{
+    float: left;
+    width: 100%;
+}
+
+.paragrafo{
+    float: left;
+    margin-left: 180px;
+    text-align: justify;
+}
+
+.meu-hr{
+    float: left;
+    width: 100%;
+}
+ 
+.meu-hr hr{
+    background-color: black;
+    height: 2px;
+    width: 85%;
+    float: right;
+}
+
+.meu-hr h3{
+    float: left;
+    margin-left: 20px;
+}
+
+#personalidade{
+    float: left;
+    width: 50%;
+    margin-top: 20px;
+}
+
+#personalidade hr{
+    background-color: black;
+    height: 2px;
+    border: none;
+}
+
+.idioma{
+    float: right;
+    width: 50%;
+    margin-top: 20px;
+}
+
+.idioma hr{
+    background-color: black;
+    height: 2px;
+    border: none;
+}
+
+.idioma p{
+    text-align: center;
+}

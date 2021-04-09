@@ -1,0 +1,34 @@
+<script>
+
+var pulalinha = function() {
+document.write("<hr>");
+};
+
+var mostra = function(frase) {
+document.write(frase);
+pulalinha();
+}
+
+mostra("Descubra sua idade");
+
+var ano = 2012;
+mostra("Eu nasci em: " + (ano - 11));
+pulalinha();
+mostra("Luiz nasceu em: " + (ano - 11));
+pulalinha();
+mostra("Victor nasceu em: " + (ano - 23));
+pulalinha();
+
+var eu = 18;
+var luiz = 19;
+var victor = 20;
+
+var total = eu + luiz + victor;
+var media = total / 3;
+mostra("A soma é: " + total);
+pulalinha();
+mostra("a média é: " + Math.round(media));
+
+console.log("essa mensagem aparece no log!");
+
+</script>

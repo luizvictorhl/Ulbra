@@ -1,0 +1,62 @@
+
+.tudo{ 
+	width: 80%;
+	border: 3px solid;	
+	
+
+	
+
+}
+#a {
+	text-align: center;
+}
+#fotoperfil {
+	width: 150px;
+	height: 150px;
+	float: left;
+	border-radius: 50%;
+	
+
+}
+.pdados{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: rgb(0, 0, 0);
+	margin-left: 20%;
+
+
+}
+.esquerda {		 
+	width: 150px;
+	float: left; 
+	background-color: #11c045; 
+	color: #0d4496;
+	margin-top: 50px;
+	
+	
+}
+
+.titulo { 
+	width: 75%;
+	margin-top: 5px;
+	float: left; 
+	background-color: #086b56; 
+	text-align: center;
+	border-radius: 5px;
+	color: rgb(0, 0, 0);
+	
+	
+}
+.dados{
+	width: 70%;
+	float: left; 
+	background-color: #ffffff; 
+	margin-top: 60px;
+	border-radius: 5px;
+	color: rgb(0, 0, 0);
+
+	
+}
+body {
+	justify-content: center;
+	display: flex;
+}
