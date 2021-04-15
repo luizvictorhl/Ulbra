@@ -2,6 +2,11 @@
     margin: 0 auto;
 }
 
+a, a:link, a:hover, a:visited{
+    text-decoration: none;
+    color: #ffffff;
+}
+
 body{
     background-color: #e2e2e2;
 }
@@ -55,29 +60,29 @@ td{
 }
 
 .divVitoria{
-    background-image: url("/img-20210407T231300Z-001/img/v.svg");
+    background-image: url("img-20210407T231300Z-001/img/v.svg");
     background-repeat: no-repeat;
     height: 16px;
     width: 16px;
-    float: left;
+    float: right;
     margin-right: 5px;
 }
 
 .divEmpate{
-    background-image: url("/img-20210407T231300Z-001/img/e.svg");
+    background-image: url("img-20210407T231300Z-001/img/e.svg");
     background-repeat: no-repeat;
     height: 16px;
     width: 16px;
-    float: left;
+    float: right;
     margin-right: 5px;
 }
 
 .divDerrota{
-    background-image: url("/img-20210407T231300Z-001/img/d.svg");
+    background-image: url("img-20210407T231300Z-001/img/d.svg");
     background-repeat: no-repeat;
     height: 16px;
     width: 16px;
-    float: left;
+    float: right;
     margin-right: 5px;
 }
 
@@ -103,7 +108,8 @@ td{
 #divCabecalho{
     background-color: #162e58;
     min-height: 100px;
-    padding: 20px 50px 10px 50px;
+    padding: 30px 50px 10px 50px;
+    position: relative;
 }
 
 #h1TituloCabeçalho{
@@ -113,6 +119,29 @@ td{
     font-size: 16px;
     text-align: left;
 
+}
+
+.divMenu{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    clear: both;
+    text-align: center;
+    padding-left: 21%;
+    padding-right: 21%;
+    text-align: center;
+}
+
+.itemMenu{
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    width: 12.5%;
+    height: 40px;
+}
+
+.itemMenu:hover{
+    background-color: black;
 }
 
 #divClassificacao{
