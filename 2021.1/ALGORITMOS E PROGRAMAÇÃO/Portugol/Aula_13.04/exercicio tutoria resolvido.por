@@ -3,12 +3,12 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro i, a, max, meio, min
-		real b, c
+		inteiro i, maior, meio, menor
+		real a, b, c
 		
-		max = 0
+		maior = 0
 		meio = 0
-		min = 0
+		menor = 0
 	
 		escreva("Digite o valor A: ")
 		leia(a)
@@ -18,31 +18,31 @@ programa
 		leia(c)
 		
 		se(a >= b e a >= c){
-		    max = a
+		    maior = a
 		    se (b >= c){
 		        meio = b
-		        min = c
+		        menor = c
 		   }senao{
 		       meio = c
-		       min = b
+		       menor = b
 		   }
 		}senao se(b >= a e b >= c){
-		    max = b
+		    maior = b
 		    se(a >= c){
 		        meio = a
-		        min = c
+		        menor = c
 		    }senao{
 		        meio = c
-		        min = a
+		        menor = a
 		    }
 		}senao se(c >= a e c >= b){
-		    max = c
+		    maior = c
 		    se( a >= b){
 		        meio = a
-		        min = b
+		        menor = b
 		    }senao{
 		        meio = b
-		        min = a
+		        menor = a
 		    }
 		        
 		}
@@ -51,16 +51,29 @@ programa
 		leia(i)
 		
 		se(i == 1){
-		    escreva("Ordem crescente ",min,",",meio,",",max)
+		    escreva("Ordem crescente: ",menor,",",meio,",",maior)
 		
 		}senao se(i == 2){
-		    escreva("Ordem decrescente ",max,",",meio,",",min)
+		    escreva("Ordem decrescente: ",maior,",",meio,",",menor)
+		    
 		}senao se(i == 3){
-		    escreva("Maior no meio ",meio,",",max,",",min)
+		    escreva("Maior no meio: ",meio,",",maior,",",menor)
+		   
 		}senao{
-		    escreva("Op��o Inv�lida!")
+		    escreva("Opção Inválida!")
 		}
 		
 	    }
 }
-		
+	
+/* $$$ Portugol Studio $$$ 
+ * 
+ * Esta seção do arquivo guarda informações do Portugol Studio.
+ * Você pode apagá-la se estiver utilizando outro editor.
+ * 
+ * @POSICAO-CURSOR = 1070; 
+ * @PONTOS-DE-PARADA = ;
+ * @SIMBOLOS-INSPECIONADOS = ;
+ * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
+ * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
+ */
