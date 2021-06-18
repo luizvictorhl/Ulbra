@@ -1,0 +1,193 @@
+*{
+   font-family: Arial, Helvetica, sans-serif;
+
+
+
+}
+header img{
+   width: 300px;
+}
+
+header{
+   background-color: white !important;
+   padding: 25px;
+   box-sizing: border-box;
+   border-bottom: 1px black solid;
+   margin-bottom: 0% !important;
+   
+}
+
+.noticia{
+   padding: 25px;
+   box-sizing: border-box;
+   border-bottom: 1px rgb(206, 201, 201) solid;
+}
+
+.colunistas{
+   padding: 15px;
+   box-sizing: border-box;
+   border-bottom: 1px rgb(206, 201, 201) solid;
+}
+
+aside{
+   padding: 1%;
+   
+}
+
+aside h2{
+   color: #ffbf40;
+   font-size: 16px;
+   line-height: 25px;
+   text-transform: uppercase;
+}
+
+aside p{
+   font-size: 18px;
+   font-weight: bold;
+}
+
+article h2{
+   color: #ff7755;
+   font-size: 18px;
+   line-height: 25px;
+   text-transform: uppercase;
+}
+
+article p{
+   font-size: 18px;
+   font-weight: bold;
+}
+
+article{
+   background-color: #fff;
+   box-sizing: border-box;
+   border-right: 1px black solid;
+
+}
+
+footer{
+   background-color: #ff7755 !important;
+   margin: 0% !important;
+}
+
+.imagens img{
+   width: 250px;
+   margin-top: 20px;
+   margin-left: 80px;
+}
+
+.imgcolunistas{
+   width: 100px;
+}
+
+.imgprofessor{
+   width: 200px;
+  
+}
+
+.textocolunas{
+   padding: 13px;
+}
+
+.trechofinal{
+   padding: 5px;
+}
+.trechofinal h2{
+   color: #ff7755;
+   font-size: 16px;
+}
+
+.trechofinal p{
+   font-size: 18px;
+   font-weight: bold;
+   color: rgb(129, 124, 124);
+   margin-top: 10px;
+}
+
+.finalzh{
+   margin-top: 35px;
+   box-sizing: border-box;
+   border-bottom: 1px rgb(206, 201, 201) solid;
+}
+
+.receitas p{
+   font-size: 25px;
+   font-weight: bold;
+   
+}
+
+.receitas h2{
+   color: #ff7755;
+   font-size: 16px;
+   
+}
+
+.receitas{
+   background-color: rgb(255, 242, 238) !important;
+   margin-bottom: 0px !important;
+}
+
+.rodape{
+   margin-bottom: 0px !important;
+   background-color: coral !important;
+   padding: 3rem !important;
+   padding-top: 0px !important;
+}
+
+.titulorodape h2{
+   margin-left: 60px;
+   color: white;
+   font-size: 45px;
+   margin-top: 60px;
+}
+
+.textorodape p{
+   color: white;
+   font-size: 13px;
+   margin-top: 60px;
+   padding-bottom: 0px !important;
+   font-style: italic;
+}
+
+.g{
+  color: white;
+  margin-bottom: 0px;
+  margin-top: 25px;
+  padding-right: 0px !important;
+  margin-right: 0px;
+  margin-left: 110px;
+}
+
+.telefoneg{
+   color: white;
+   margin-bottom: 15px;
+   padding-right: 0px;
+   margin-left: 110px;
+}
+
+.radio{
+   color: white;
+   margin-bottom: 0px;
+   margin-left: 110px;
+}
+
+.telefoneradio{
+   color: white;
+   margin-left: 110px;
+}
+
+.informacoes img{
+   width: 30px;
+   height: 30px;
+   float: right;
+   margin-right: 300px;
+   margin-top: 30px;
+}
+
+.whats img{
+   width: 30px;
+   height: 30px;
+   float: right;
+   margin-right: 300px;
+   margin-top: 5px;
+}

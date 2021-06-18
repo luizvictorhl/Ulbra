@@ -1,0 +1,15 @@
+.minha-classe{
+   background-color: rgb(209, 87, 50) !important;
+   color: #fff;
+   padding: 10px;
+}
+
+header{
+   padding: 2em !important;
+}
+
+footer{
+   padding: 1em !important;
+   color: black;
+   font-size: 15px;
+}
