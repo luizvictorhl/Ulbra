@@ -8,21 +8,18 @@
     </head>
     <body>
 
-    <form>
-        <input type="text" id="valor1">
-        <input type="text" id="valor2">
+    <h1>Calculadora Imc</h1>
+    <form action = "#">
 
-        <select name="oper" id="oper">
-            <option value="somar">Somar</option>
-            <option value="subtrair">Subtrair</option>
-            <option value="multiplicar">Multiplicar</option>
-            <option value="dividir">Dividir</option>
-        </select>
-        <input type="button" onclick="Calculadora()" value="Calcular">
+        <input type="text" id="nome">
+        <input type="text" id="sexo">
+        <input type="number" id="valor1">
+        <input type="number" id="valor2">
+        <button type="button" onclick="CalculadoraImc()">Calcular</button>
     </form>
 
     </body>
-    <p>O resultado é:</p><div id="res"></div>
+    <p>O resultado é:</p><div id="resultado"></div>
 
     
 </html>

@@ -1,19 +1,29 @@
-
-function aloMundo() {
-    alert('oi');
+function validaEntrada(args) {
+	for (let i = 0; i < arguments.length; i++) {
+		if (!!arguments[i] == false || arguments[i] < 0) {
+			return false;
+		}
+	}
+	return true;
 }
 
-function clickBotao(){
-    var nome = document.getElementById('nome').value;
-    var sobreNome = document.getElementById('sobreNome').value;
-    var divNome = document.getElementById('divNome').innerHTML;
-    document.getElementById('divNome').innerHTML = divNome + ' '+ nome + ' ' +sobreNome;
+function calcularIMC(kilos, altura) {
+	altura = altura / 100;
+	return (kilos / (altura * altura));
 }
 
-function emCima(){
-    alert('em cima do link');
-}
+const formCalcularIMC = document.getElementById('form');
 
-function fora(){
-    alert('fora do link')
-}
+formCalcularIMC.addEventListener('submit', function(event) {
+	event.preventDefault();
+
+	const kilos = parseFloat(document.getElementById('kilos').value);
+	const altura = parseFloat(document.getElementById('altura').value);
+
+	if (validaEntrada(kilos, altura)) {
+		const imc = calcularIMC(kilos, altura);
+		document.getElementById('imc').value = parseInt(imc).toFixed(2);
+	} else {
+		document.getElementById('imc').value = "## ERRO ##";
+	}
+});
