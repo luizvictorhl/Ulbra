@@ -1,0 +1,205 @@
+*{
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+
+
+
+}
+.titulopag{
+   font-size: 50px;
+   text-align: center !important;
+   color: #fff;
+   margin-bottom: 15px !important;
+   padding-top: 3% !important;
+}
+
+.menu{
+   text-align: left !important;
+   margin-left: 15px;
+   color: #0000FF;
+}
+
+#a:link, a:visited{
+   text-decoration: none;
+   color: #fff;
+   display: inline-block;
+
+}
+
+#apresentacao{
+   padding-left: 20px;
+   color: #fff;
+   padding-top: 3px;
+}
+
+header{
+   background-color: #3fa909 !important;
+   box-sizing: border-box;
+   border-bottom: 1px #3fa909;
+   margin-bottom: 0% !important;
+   
+}
+
+.buscar{
+   text-align: right;
+   margin-right: 10%;
+   padding-bottom: 5px;
+   
+}
+
+.noticia{
+   padding: 15px;
+   box-sizing: border-box;
+   border-bottom: 1px #3fa909 solid;
+}
+
+.info{
+   padding: 15px;
+   box-sizing: border-box;
+   border-bottom: 1px #3fa909 solid;
+}
+
+aside{
+   padding: 1%;
+   
+}
+
+aside h2{
+   color: #000000;
+   font-size: 19px;
+   line-height: 25px;
+   text-transform: uppercase;
+}
+
+aside p{
+   font-size: 19px;
+   font-weight: bold;
+   color: #3fa909;
+}
+
+article h2{
+   color: rgb(0, 0, 0);
+   font-size: 18px;
+   line-height: 25px;
+   text-transform: uppercase;
+}
+
+article p{
+   color: #3fa909;;
+   font-size: 22px;
+   font-weight: bold;
+   border-bottom: 10px;
+}
+
+article{
+   background-color: #fff;
+   box-sizing: border-box;
+   border-right: 1px #3fa909 solid;
+
+}
+
+footer{
+   background-color: #3fa909 !important;
+   margin: 0% !important;
+   padding: 1rem !important;
+}
+
+.noticiacurta{
+   font-size: 15px;
+   color: rgb(97, 97, 97);
+}
+
+.imagens img{
+   width: 250px;
+   margin-top: 20px;
+   margin-left: 50px;
+}
+
+.imgcolunistas{
+   width: 100px;
+   padding-top: 6px;
+}
+
+.ulcoluna{
+   width: 110px;
+   padding-top: 20px;
+}
+
+.cadastro{
+   background-color: rgb(89, 240, 97) !important;
+   margin: 0 auto !important;
+   color: #fff !important;
+   font-size: 14px !important;
+   padding-top: 0px !important;
+   
+   
+}
+
+
+.textocolunas{
+   padding: 13px;
+}
+
+.finalesportes{
+   padding: 5px;
+}
+.finalesportes h2{
+   color: #3fa909;
+   font-size: 16px;
+}
+
+.finalesportes p{
+   font-size: 18px;
+   font-weight: bold;
+   color: rgb(129, 124, 124);
+   margin-top: 10px;
+}
+
+.finalge{
+   margin-top: 35px;
+   box-sizing: border-box;
+   border-bottom: 1px #3fa909 solid;
+}
+
+
+.rodape{
+   margin-bottom: 0px !important;
+   background-color: #3fa909 !important;
+   padding-top: 0px !important;
+}
+
+.titulorodape h2{
+   margin-left: 30px;
+   padding: 2%;
+   color: white;
+   font-size: 30px;
+   margin-top: 50px;
+}
+
+.textorodape p{
+   color: white;
+   font-size: 16px;
+   margin-top: 70px;
+   font-style: bold;
+   margin-left: 30%;
+}
+
+#copyright{
+   text-align: right;
+   color: #fff;
+   margin-top: 20%;
+}
+
+.textocolunas{
+   padding: 13px;
+}
+
+.colunistas{
+   padding: 15px;
+   box-sizing: border-box;
+   border-bottom: 1px #3fa909 solid;
+}
+
+
+
+
+

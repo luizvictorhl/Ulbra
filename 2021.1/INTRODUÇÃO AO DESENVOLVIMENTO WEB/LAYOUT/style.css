@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    background-color: rgb(197, 240, 178);
+    padding: 20px;
+
+}
+
+
+#titulo{
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.decorationul{
+    list-style-type: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
+nav{
+    float: left;
+    width: 30%;
+    background-color: rgb(193, 207, 181);
+    min-height: 300px;
+    padding: 30px;
+}
+
+nav li{
+    margin-bottom: 10px;
+    text-decoration: none;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+article{
+    float: left;
+    width: 70%;
+    padding: 30px;
+
+}
+
+section::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer{
+    background-color: rgb(197, 240, 178) ;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    color: #000;
+}

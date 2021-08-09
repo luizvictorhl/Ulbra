@@ -3,16 +3,17 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro valor[10], i
+		const inteiro size=5
+		inteiro valor[size], i
 
-		para(i=0; i <10; i++){
+		para(i=0; i < size; i++){
 			escreva("Digite um valor inteiro: ")
 			leia(valor[i])
 		}
 		escreva("\n A ordem inversa dos valores é: ")
 
-		para(i=0; i<10; i++){
-			escreva("\n"+valor[9-i])
+		para(i=0; i< size; i++){
+			escreva("\n"+valor[(size-1)-i])
 	
 		}
 	}
@@ -22,7 +23,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 124; 
+ * @POSICAO-CURSOR = 280; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
