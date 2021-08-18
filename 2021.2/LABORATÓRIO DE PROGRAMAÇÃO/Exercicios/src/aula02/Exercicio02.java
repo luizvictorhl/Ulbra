@@ -4,30 +4,28 @@ import javax.swing.JOptionPane;
 
 public class Exercicio02 {
     public static void main(String[] args) {
-        double valortransacao;
-        double valorvenal;
-        double imposto;
-        double valorimposto;
-        String dado;
+        int valortransacao, valorvenal, imposto,valorimposto;
+        String vt, vv, imp;
 
-        dado = JOptionPane.showInputDialog("Digite o valor da transação: ");
-        valortransacao = Double.parseDouble(dado);
+        vt = JOptionPane.showInputDialog("Digite o valor da transação: ");
+        valortransacao = Integer.parseInt(vt);
 
-        dado = JOptionPane.showInputDialog("Digite o valor venal: ");
-        valorvenal = Double.parseDouble(dado);
+        vv = JOptionPane.showInputDialog("Digite o valor venal: ");
+        valorvenal = Integer.parseInt(vv);
 
-        dado = JOptionPane.showInputDialog("Digite o valor de imposto em %: ");
-        imposto = Double.parseDouble(dado);
+        imp = JOptionPane.showInputDialog("Digite o valor de imposto em %: ");
+        imposto = Integer.parseInt(imp);
 
         if (valortransacao > valorvenal){
             valorimposto = valortransacao * imposto /100;
-
+            JOptionPane.showMessageDialog(null, "O montante do seu imposto é: "+ "R$" + valorimposto,
+                    "Valor do seu imposto!", JOptionPane.INFORMATION_MESSAGE);
         }
-        else{
+        else if(valorvenal > valortransacao){
             valorimposto = valorvenal * imposto / 100;
+            JOptionPane.showMessageDialog(null, "O montante do seu imposto é: " + "R$" + valorimposto,
+                    "Valor do seu imposto!", JOptionPane.INFORMATION_MESSAGE);
         }
-        JOptionPane.showMessageDialog(null, "O montante do seu imposto é: "+ "R$" + valorimposto,
-                "Valor do seu imposto!", JOptionPane.INFORMATION_MESSAGE);
     }
 }
 
