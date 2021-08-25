@@ -14,6 +14,6 @@ public class Atividade04 {
         for(int i = entrada.length()-1; i>=0; i--){
             saida = saida + Character.toString(entrada.charAt(i));
         }
-        System.out.println(saida);
+        System.out.println(saida.replace(" ", ""));
     }
 }
