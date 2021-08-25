@@ -6,58 +6,30 @@ public class Exercicio06 {
 
     public static void main(String args[]) {
 
-        int a;
-        int b;
-        int c;
-        int d;
-        int soma;
-        int maior=0;
-        int menor=99999999;
+      double totalRes=0;
+      double ValorLido;
+      double maiorRes=0,menorRes=0;
 
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Digite o valor da primeira resistência");
-        a = input.nextInt();
+        for (int i=0; i<4; i++){
+            System.out.println("Digite o valor da resistência:");
+            ValorLido=input.nextDouble();
+            totalRes+=ValorLido;
 
-        System.out.println("Digite o valor da segunda resistência");
-        b = input.nextInt();
-
-        System.out.println("Digite o valor da terceira resistência");
-        c = input.nextInt();
-
-        System.out.println("Digite o valor da quarta resistência");
-        d = input.nextInt();
-
-
-        if (b > maior) {
-            maior = b;
+            if (i==0){
+                maiorRes=ValorLido;
+                menorRes=ValorLido;
+            }
+            if(ValorLido>maiorRes){
+                maiorRes=ValorLido;
+            }
+            if(ValorLido<menorRes){
+                menorRes=ValorLido;
+            }
         }
-
-        if (c > maior) {
-            maior = c;
-        }
-
-        if (d > maior) {
-            maior = d;
-        }
-
-        System.out.println("O Maior nº é " + maior);
-
-        if (b < menor) {
-            menor = b;
-        }
-
-        if (c < menor) {
-            menor = c;
-        }
-
-        if (d < menor) {
-            menor = d;
-        }
-
-        System.out.println("O Menor nº é " + menor);
-        soma = a + b + c + d;
-        System.out.println("A soma de todas as resistências equivale a " +soma);
-
+        System.out.println("O maior valor lido foi "+maiorRes);
+        System.out.println("O menor valor lido foi "+menorRes);
+        System.out.println("O total lido foi "+totalRes);
     }
 }

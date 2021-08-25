@@ -12,8 +12,8 @@ public class Exercicio08 {
         int n = in.nextInt();
         System.out.println("");
         {
-            for (int y = 0; y <= 10; y++)
-                System.out.println("* " + n + " X " + y + " = " + n * y);
+            for (int i = 0; i <= 10; i++)
+                System.out.println("* " + n + " X " + i + " = " + n * i);
 
         }
 
