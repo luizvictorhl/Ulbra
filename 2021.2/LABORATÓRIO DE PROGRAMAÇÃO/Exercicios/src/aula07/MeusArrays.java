@@ -1,41 +1,41 @@
-package aula06;
+package aula07;
 
 import java.util.Random;
 
 public class MeusArrays {
 
-    public static int[] gerar(int length){
-        Random aleatorios = new Random();
-        int[] vet = new int[length];
-        for(int i = 0; i < length; i++){
-            vet[i] = aleatorios.nextInt(1001);
-        }
-        return vet;
-    }
-
-    public static int find(int[] vetor1, int[] vetor2, int num){
-        int find = 0;
-
-        if(inArray(num, vetor1) || inArray(num, vetor2)){
-            find = 1;
-            if(inArray(num, vetor1) && inArray(num, vetor2)){
-                find = 2;
+    public static int findArrays(int[] vetorA, int[] vetorB, int number) {
+        int resp = 0;
+        for (int i = 0; i < vetorA.length; i++) {
+            if (number == vetorA[i]) {
+                resp++;
+                break;
             }
         }
-
-        return find;
-    }
-
-    public static boolean inArray(int num, int[] vetor){
-        for(int i = 0; i < vetor.length; i++){
-            if(vetor[i] == num){
-                return true;
+        for (int i = 0; i < vetorB.length; i++) {
+            if (number == vetorB[i]) {
+                resp++;
+                break;
             }
+
         }
+        return resp;
 
-        return false;
     }
+    public static  int[] retornArray(int tam){
+        int[] vetor=new int[tam];
+        Random rand = new Random();
+        for(int i=0; i<tam; i++){
+            vetor[i]=rand.nextInt(1000);
+        }
+        return vetor;
+    }
+    public static void showArray(int[] vetor){
 
 
+        for(int i=0; i<vetor.length; i++){
+            System.out.println(vetor[i]);
+        }
+    }
 }
 

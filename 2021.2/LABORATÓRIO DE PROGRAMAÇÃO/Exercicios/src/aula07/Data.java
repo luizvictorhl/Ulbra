@@ -1,54 +1,44 @@
-package aula06;
+package aula07;
 
 public class Data{
+    int dia;
+    int mes;
+    int ano;
+   public static int getDia(String data) {
+       if (valide(data)) {
+           int dia;
+           return dia = Integer.parseInt(data.substring(0, 2));
 
-    public static int getDia(String data){
-        int dia = 0;
-        if(isDate(data, "dd/mm/yyyy")){
-            String[] date = data.split("/");
-            return (Integer.parseInt(date[0]));
+       }
+       return 0;
+   }
+    public static int getMes(String data) {
+        if (valide(data)) {
+            int mes;
+            return mes = Integer.parseInt(data.substring(3, 5));
+
         }
+        return 0;
+    }
+    public static int getAno(String data) {
+        if (valide(data)) {
+            int ano;
+            return ano = Integer.parseInt(data.substring(6, 10));
 
-        return dia;
+        }
+        return 0;
     }
 
-    public static int getMes(String data){
-        int Mes = 0;
-        if(isDate(data, "dd/mm/yyyy")){
-            String[] date = data.split("/");
-            return (Integer.parseInt(date[1]));
-        }
-
-        return Mes;
+    public static boolean valide(String data){
+       if(data.length()==10){
+           if((data.charAt(2)=='/') && ((data.charAt(5)=='/'))){
+               return true;
+           }else{
+               return false;
+           }
+       }else{
+           return false;
+       }
     }
-
-    public static int getAno(String data){
-        int ano = 0;
-        if(isDate(data, "dd/mm/yyyy")){
-            String[] date = data.split("/");
-            return (Integer.parseInt(date[2]));
-        }
-
-        return ano;
-    }
-
-    public static boolean isDate(String date, String format){
-        String[] data = date.split("/");
-        String[] formato = format.split("/");
-
-        int check = 0;
-        for(int i = 0; i < formato.length; i++){
-            if(formato[i].length() == data[i].length()){
-                check++;
-            }
-        }
-
-        if(check == formato.length){
-            return true;
-        }
-
-        return false;
-    }
-
 
 }
