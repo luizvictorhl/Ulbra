@@ -1,6 +1,7 @@
 package ap2;
 
 
+import javax.swing.*;
 import java.util.Scanner;
 
 
@@ -23,6 +24,14 @@ public class input {
         return str;
     }
 
+    public String lerStringJOP() {
+        String str;
+        str = JOptionPane.showInputDialog("Digite a string");
+        JOptionPane.showMessageDialog(null, "A string é " +str);
+        return str;
+
+    }
+
     public float lerFloat() {
         System.out.println("Digite um float:");
         Scanner tc = new Scanner(System.in);
@@ -36,6 +45,13 @@ public class input {
         float flo = tc.nextFloat();
         System.out.println(flo);
         return flo;
+    }
+    public float lerFloatJOP() {
+        float flo;
+        flo = Float.parseFloat(JOptionPane.showInputDialog("Digite o float"));
+        JOptionPane.showMessageDialog(null, "O float é " +flo);
+        return flo;
+
     }
     public double lerDouble(){
         System.out.println("Digite um double:");
@@ -51,6 +67,13 @@ public class input {
         System.out.println(dou);
         return dou;
     }
+    public double lerDoubleJOP() {
+        double dou;
+        dou = Double.parseDouble((JOptionPane.showInputDialog("Digite o double")));
+        JOptionPane.showMessageDialog(null, "O double é " +dou);
+        return dou;
+
+    }
     public int lerInt(){
         System.out.println("Digite um inteiro:");
         Scanner tc = new Scanner(System.in);
@@ -65,6 +88,13 @@ public class input {
         System.out.println(inter);
         return inter;
     }
+    public int lerIntJOP() {
+        int inter;
+        inter = Integer.parseInt((JOptionPane.showInputDialog("Digite o inteiro")));
+        JOptionPane.showMessageDialog(null, "O inteiro é " +inter);
+        return inter;
+    }
+
     public char lerChar(){
         System.out.println("Digite um char:");
         Scanner tc = new Scanner(System.in);
@@ -78,6 +108,18 @@ public class input {
         char chart = tc.next().charAt(0);
         System.out.println(chart);
         return chart;
+    }
+    public String lerCharJOP() {
+        String chart;
+        chart =(JOptionPane.showInputDialog("Digite o char"));
+        if(chart.length() != 1) {
+            JOptionPane.showMessageDialog(null, "O valor digitado não é suportado.");
+        }else {
+            JOptionPane.showMessageDialog(null, "O char é " +chart);
+        }
+        return chart;
+
+
     }
     //Um método para Ler uma string formatada como e-mail, o método deve retornar o email quando válido ou null se for inválido;
     public String validarEmail(){
