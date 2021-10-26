@@ -11,7 +11,7 @@ public class input {
         System.out.println("Digite a string");
         Scanner tc = new Scanner(System.in);
         String str = tc.next();
-        System.out.println(str);
+        System.out.println("DADO LIDO: " + str + "\n");
         return str;
 
     }
@@ -20,7 +20,7 @@ public class input {
         System.out.println(mensagem);
         Scanner tc = new Scanner(System.in);
         String str = tc.next();
-        System.out.println(str);
+        System.out.println("DADO LIDO: " + str + "\n");
         return str;
     }
 
@@ -36,14 +36,14 @@ public class input {
         System.out.println("Digite um float:");
         Scanner tc = new Scanner(System.in);
         float flo = tc.nextFloat();
-        System.out.println(flo);
+        System.out.println("DADO LIDO: " + flo + "\n");
         return flo;
     }
     public float lerFloat(String mensagem){
         System.out.println(mensagem);
         Scanner tc = new Scanner(System.in);
         float flo = tc.nextFloat();
-        System.out.println(flo);
+        System.out.println("DADO LIDO: " + flo + "\n");
         return flo;
     }
     public float lerFloatJOP() {
@@ -57,14 +57,14 @@ public class input {
         System.out.println("Digite um double:");
         Scanner tc = new Scanner(System.in);
         double dou = tc.nextDouble();
-        System.out.println(dou);
+        System.out.println("DADO LIDO: " + dou + "\n");
         return dou;
     }
     public double lerDouble(String mensagem){
         System.out.println(mensagem);
         Scanner tc = new Scanner(System.in);
         double dou = tc.nextDouble();
-        System.out.println(dou);
+        System.out.println("DADO LIDO: " + dou + "\n");
         return dou;
     }
     public double lerDoubleJOP() {
@@ -78,14 +78,14 @@ public class input {
         System.out.println("Digite um inteiro:");
         Scanner tc = new Scanner(System.in);
         int inter = tc.nextInt();
-        System.out.println(inter);
+        System.out.println("DADO LIDO: " + inter + "\n");
         return inter;
     }
     public int lerInt(String mensagem){
         System.out.println(mensagem);
         Scanner tc = new Scanner(System.in);
         int inter = tc.nextInt();
-        System.out.println(inter);
+        System.out.println("DADO LIDO: " + inter + "\n");
         return inter;
     }
     public int lerIntJOP() {
@@ -99,14 +99,14 @@ public class input {
         System.out.println("Digite um char:");
         Scanner tc = new Scanner(System.in);
         char chart = tc.next().charAt(0);
-        System.out.println(chart);
+        System.out.println("DADO LIDO: " + chart + "\n");
         return chart;
     }
     public char lerChar(String mensagem){
         System.out.println(mensagem);
         Scanner tc = new Scanner(System.in);
         char chart = tc.next().charAt(0);
-        System.out.println(chart);
+        System.out.println("DADO LIDO: " + chart + "\n");
         return chart;
     }
     public String lerCharJOP() {

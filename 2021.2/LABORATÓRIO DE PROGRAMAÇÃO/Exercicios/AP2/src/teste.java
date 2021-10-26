@@ -1,6 +1,5 @@
 package ap2;
 
-import ap2.input;
 
 import java.util.Scanner;
 
