@@ -6,22 +6,18 @@ import java.util.Scanner;
 
 
 public class input {
+    Scanner tc = new Scanner(System.in);
 
     public String lerString() {
         System.out.println("Digite a string");
-        Scanner tc = new Scanner(System.in);
-        String str = tc.next();
-        System.out.println("DADO LIDO: " + str + "\n");
-        return str;
+        return tc.next();
 
     }
 
     public String lerString(String mensagem) {
         System.out.println(mensagem);
-        Scanner tc = new Scanner(System.in);
-        String str = tc.next();
-        System.out.println("DADO LIDO: " + str + "\n");
-        return str;
+        return tc.next();
+
     }
 
     public String lerStringJOP() {
@@ -34,18 +30,18 @@ public class input {
 
     public float lerFloat() {
         System.out.println("Digite um float:");
-        Scanner tc = new Scanner(System.in);
         float flo = tc.nextFloat();
         System.out.println("DADO LIDO: " + flo + "\n");
         return flo;
     }
+
     public float lerFloat(String mensagem){
         System.out.println(mensagem);
-        Scanner tc = new Scanner(System.in);
         float flo = tc.nextFloat();
         System.out.println("DADO LIDO: " + flo + "\n");
         return flo;
     }
+
     public float lerFloatJOP() {
         float flo;
         flo = Float.parseFloat(JOptionPane.showInputDialog("Digite o float"));
@@ -53,20 +49,21 @@ public class input {
         return flo;
 
     }
+
     public double lerDouble(){
         System.out.println("Digite um double:");
-        Scanner tc = new Scanner(System.in);
         double dou = tc.nextDouble();
         System.out.println("DADO LIDO: " + dou + "\n");
         return dou;
     }
+
     public double lerDouble(String mensagem){
         System.out.println(mensagem);
-        Scanner tc = new Scanner(System.in);
         double dou = tc.nextDouble();
         System.out.println("DADO LIDO: " + dou + "\n");
         return dou;
     }
+
     public double lerDoubleJOP() {
         double dou;
         dou = Double.parseDouble((JOptionPane.showInputDialog("Digite o double")));
@@ -74,20 +71,21 @@ public class input {
         return dou;
 
     }
+
     public int lerInt(){
         System.out.println("Digite um inteiro:");
-        Scanner tc = new Scanner(System.in);
         int inter = tc.nextInt();
         System.out.println("DADO LIDO: " + inter + "\n");
         return inter;
     }
+
     public int lerInt(String mensagem){
         System.out.println(mensagem);
-        Scanner tc = new Scanner(System.in);
         int inter = tc.nextInt();
         System.out.println("DADO LIDO: " + inter + "\n");
         return inter;
     }
+
     public int lerIntJOP() {
         int inter;
         inter = Integer.parseInt((JOptionPane.showInputDialog("Digite o inteiro")));
@@ -97,18 +95,18 @@ public class input {
 
     public char lerChar(){
         System.out.println("Digite um char:");
-        Scanner tc = new Scanner(System.in);
         char chart = tc.next().charAt(0);
         System.out.println("DADO LIDO: " + chart + "\n");
         return chart;
     }
+
     public char lerChar(String mensagem){
         System.out.println(mensagem);
-        Scanner tc = new Scanner(System.in);
         char chart = tc.next().charAt(0);
         System.out.println("DADO LIDO: " + chart + "\n");
         return chart;
     }
+
     public String lerCharJOP() {
         String chart;
         chart =(JOptionPane.showInputDialog("Digite o char"));
@@ -122,8 +120,8 @@ public class input {
 
     }
     //Um método para Ler uma string formatada como e-mail, o método deve retornar o email quando válido ou null se for inválido;
+
     public String validarEmail(){
-        Scanner tc = new Scanner(System.in);
         String email;
 
         System.out.println("Digite um e-mail:");
@@ -141,7 +139,6 @@ public class input {
 
     public boolean validarData(){
         String data;
-        Scanner tc = new Scanner(System.in);
         System.out.println("Digite uma data");
         data = tc.next();
         if(data.length()==10){
@@ -165,7 +162,6 @@ public class input {
 
     public boolean validarTelefone(){
         String telephone;
-        Scanner tc = new Scanner(System.in);
         System.out.println("Digite um telefone");
         telephone = tc.next();
 
@@ -190,7 +186,6 @@ public class input {
     //Um método para converter uma data dd/mm/aaaa para mm/dd/aaaa
 
     public int converterData(){
-        Scanner tc = new Scanner(System.in);
         System.out.println("Digite uma data no formato dd/mm/aaaa:");
         String data = tc.next();
 
@@ -216,9 +211,8 @@ public class input {
     //Um método para validar se um dado lido é um dígito numérico, se for retornar true.
 
     public boolean validarNumerico() {
-        Scanner ler = new Scanner(System.in);
         System.out.println("Digite algo para verificar se é númerico:");
-        String str = ler.next();
+        String str = tc.next();
         try {
             Double.parseDouble(str);
             System.out.println("O valor digitado é númerico. Valor digitado: " + str);
@@ -228,10 +222,6 @@ public class input {
             return false;
         }
     }
-
-
-
-
 }
 
 
