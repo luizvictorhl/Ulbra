@@ -42,6 +42,16 @@ WHERE uf='RS';
 SELECT nome, preco
 FROM medicamentos;
 
+SELECT MAX(preco) AS medicamento_mais_caro
+FROM nome
+where medicamentos;
+
+SELECT AVG(preco) AS media_de_preco_medicamentos
+FROM medicamentos
+
+SELECT COUNT(codconsulta) AS quantas_consultas
+FROM consultas
+
 SELECT nome, telefone
 FROM medicos
 where cod_cidade=2;
@@ -54,8 +64,5 @@ SELECT nome, telefone
 FROM pacientes
 where cod_cidade=1;
 
-SELECT nome
-from pacientes
-where consultas;
 
        
