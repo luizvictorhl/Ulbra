@@ -42,21 +42,6 @@ WHERE uf='RS';
 SELECT nome, preco
 FROM medicamentos;
 
-SELECT MAX(preco) AS medicamento_mais_caro
-FROM nome
-where medicamentos;
-
-SELECT AVG(preco) AS media_de_preco_medicamentos
-FROM medicamentos
-
-SELECT COUNT(codconsulta) AS quantas_consultas
-FROM consultas
-
-SELECT nome
-FROM medicamentos
-WHERE preco > (SELECT AVG(preco) AS media_de_preco_medicamentos
-FROM medicamentos)
-
 SELECT nome, telefone
 FROM medicos
 where cod_cidade=2;
@@ -69,21 +54,8 @@ SELECT nome, telefone
 FROM pacientes
 where cod_cidade=1;
 
-select m.nome as medico, p.nome as paciente, c.data, c.hora
-from medicos m
-    inner join consultas c
-        on c.id_medico = m.id
-    inner join pacientes p
-        on p.id = c.id_paciente
-
-select m.nome as medico, b.nome as medicamento  
-from prescriçoes p 
-    inner join consultas c
-        on c.id = p.id_consulta
-    inner join medicos m
-        on m.id = c.id_medico
-    inner join medicanentos b 
-        on b.id= p.id_medicamento
-    where m.id = 3999 and c.data between '2021-10-01' and '2021-10-30'
+SELECT nome
+from pacientes
+where consultas;
 
        
