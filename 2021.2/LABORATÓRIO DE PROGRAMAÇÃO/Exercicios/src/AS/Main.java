@@ -9,7 +9,7 @@ import java.util.Scanner;
 
         public static void main(String[] args) {
 
-            Scanner tc= new Scanner(System.in);
+            Scanner tc = new Scanner(System.in);
 
             ArrayList<Serie> catalogo = new ArrayList<Serie>();
             int op = 0;
@@ -46,11 +46,11 @@ import java.util.Scanner;
 
                     case 3: {
                         System.out.println("Digite a posição a ser apagada:");
-                        int posicao=tc.nextInt();
-                        Serie apagar=catalogo.remove(posicao);
-                        if(apagar!=null){
-                            System.out.println("Livro apagado: "+apagar.titulo);
-                        }else{
+                        int posicao = tc.nextInt();
+                        Serie apagar = catalogo.remove(posicao);
+                        if (apagar != null) {
+                            System.out.println("Livro apagado: " + apagar.titulo);
+                        } else {
                             System.out.println("Nao encontrei");
                         }
                         break;
@@ -63,25 +63,27 @@ import java.util.Scanner;
                         Serie buscar = new Serie(nome);
 
                         if (catalogo.contains(buscar)) {
-                            System.out.println("Encontrei a série: " + nome + " na posiçao:" + catalogo.indexOf(buscar));
+                            System.out.println("\nEncontrei a série " + nome + " na posiçao:" + catalogo.indexOf(buscar));
+                            catalogo.get(catalogo.indexOf(buscar)).exibirDados();
                         } else {
-                            System.out.println("Desculpe, não encontrei a série desejada.");
+                            System.out.println("\nDesculpe, não encontrei a série desejada.");
                         }
                         break;
                     }
 
                     case 5: {
                         System.out.println("Total de séries cadastradas: " + catalogo.size());
-                        for (int i=0;i<catalogo.size();i++){
+                        for (int i = 0; i < catalogo.size(); i++) {
                             catalogo.get(i).exibirDados();
                         }
                         break;
                     }
-
                 }
-            }while (op!=6);
-            System.out.println("Obrigado por utilizar!");
-        }
 
-    }
+            }while (op != 6) ;
+                    System.out.println("Obrigado por utilizar!");
+                }
+
+            }
+
 
