@@ -453,18 +453,15 @@ VALUES
   (67, 54, 856.48, 349.00);
 
 --Exercicio Número 1
-SELECT        AVG(ni.valor_unit) as media_valor_vendido, p.descricao as nome_produto, id_produto
+SELECT        ni.id_produto, AVG(valor_unit) AS media_valor_unit
 FROM         notas_itens ni 
                 inner JOIN notas n 
                     on ni.id_nota = n.id
-                inner JOIN produtos p
-                    on p.id = ni.id_produto
-where         n.data_emissao between '2017-12-01' and '2021-12-01'
-group by p.descricao, id_produto
-order by media_valor_vendido desc 
+where  n.data_emissao>= '2017-12-01' and '2021-12-01'
+group by ni.id_produto
 
 --Exercicio Numero 2
-SELECT        p.descricao as produto, c.nome as cliente, ni.quantidade as quantidade_produtos
+SELECT        c.nome as cliente,p.descricao as produto, SUM(ni.quantidade) as quantidade_produtos
 FROM         notas n
                 JOIN clientes c
                     on n.id_cliente = c.id
@@ -472,9 +469,8 @@ FROM         notas n
                     on ni.id_nota = n.id
                 JOIN produtos p
                     on ni.id_produto = p.id
-where         c.nome like '%Ma%'
-GROUP BY    c.nome, p.descricao, ni.quantidade
-
+where         c.nome like 'Maria%'
+GROUP BY    c.nome, p.descricao
 --Exercicio Numero 3
 SELECT        p.descricao, c.nome as cliente, MAX(ni.quantidade) as quantidade_mais_comprado
 FROM         notas n
@@ -484,22 +480,21 @@ FROM         notas n
                     on ni.id_nota = n.id
                 JOIN produtos p
                     on ni.id_produto = p.id
-where         c.nome like '%Ma%'
+where         c.nome like 'Maria%'
 GROUP BY    c.nome, p.descricao, ni.quantidade
 order BY    ni.quantidade desc
 limit         1
 
 --Exercício Número 4
-SELECT        c.nome as cliente, p.descricao as produto_mais_caro, MAX(p.valor_unit ) as valor_produto 
-FROM         notas n
+SELECT	    c.nome as cliente, p.descricao as produto_mais_caro, MAX(p.valor_unit) as valor_produto
+FROM 	      notas n
                 JOIN clientes c
                     on n.id_cliente = c.id
                 JOIN notas_itens ni
                     on ni.id_nota = n.id
                 JOIN produtos p
                     on ni.id_produto = p.id
-where         n.data_emissao between '2059-01-01' and '2087-12-31'
+where 	    n.data_emissao between '2010-01-01' and '2021-12-31'
 GROUP BY    c.nome, p.descricao, ni.valor_unit
-order BY    ni.valor_unit desc
-limit         1
-
+order BY	  valor_produto desc
+limit 		  1
