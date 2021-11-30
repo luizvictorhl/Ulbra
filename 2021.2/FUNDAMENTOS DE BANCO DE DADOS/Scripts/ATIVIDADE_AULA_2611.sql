@@ -149,7 +149,7 @@ GROUP BY	c.modelo, cl.nome
 ORDER BY	maior_valor desc
 LIMIT		1
 
--- quantos alugueis no ano de 2018 por cliente e quem tem mais alugueis? e quais os 5 primeiros que tem mais alugueis?
+-- quantos alugueis no ano de 2018 por cliente e quem tem mais alugueis? e quais os 3 primeiros que tem mais alugueis?
 SELECT        COUNT(a.registro) as quantidade_alugueis, cl.nome
 FROM        alugueis a
                 inner join clientes cl
@@ -157,7 +157,7 @@ FROM        alugueis a
 where        data_aluguel between '2018-01-01' and '2018-12-31'
 GROUP BY    cl.nome
 ORDER BY    quantidade_alugueis DESC
-limit        5
+limit        3
 
 -- clientes que alugaram mais de uma vez
 SELECT		COUNT(a.registro) as quantidade_alugueis, cl.nome
