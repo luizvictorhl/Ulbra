@@ -6,7 +6,14 @@ namespace Atividade01
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("CALCULO DE ÁREA DO TRIÂNGULO");
+                AreaTriangulo objcalculo = new AreaTriangulo();
+                objcalculo.SetBaseT(20);
+                objcalculo.SetAlturaT(100);
+                Console.WriteLine("Base do Triângulo " + objcalculo.GetBaseT())
+                Console.WriteLine("Altura do Triângulo " + objcalculo.GetAlturaT())
+                Console.WriteLine("Área do Triângulo " + objcalculo.AreaT())
+
         }
     }
 }
