@@ -1,7 +1,7 @@
 ﻿using System;
-usign Atividade01.Entitie;
+using Atividade01.Entitie;
 
-namespace Atividade01;
+namespace Atividade01
 {
     class Program
     {

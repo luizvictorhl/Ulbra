@@ -1,10 +1,9 @@
-using System;
-
-namespace Atividade01.Entitie
+namespace Atividade02.Entitie
 {
-    public class AreaTriangulo
+    public class Triangulo
     {
-         public double baseT;
+        
+     public double baseT;
         public double alturaT;
         public double areaT;
 
