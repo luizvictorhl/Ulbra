@@ -28,7 +28,6 @@ class SiteController{
         require_once("views/templates/footer.php");
     }
 
-
 }
 
 ?>
