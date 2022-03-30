@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using Aula04Atividades.Entitie;
 
-/*Identifique os atributos de  uma agenda	telefônica, modele as classes, atributos e métodos necessários para a futura implementação.
-    public class Agenda*/
 
 namespace Aula04Atividades
 {
