@@ -51,11 +51,11 @@
 
                     <h3>Clientes</h3>
                 <li class="nav-item">
-                    <a class="nav-link" href="?controller=client&action=insertClient">Cadastro</a>
+                    <a class="nav-link" href="?controller=client&action=insertClient">Cadastro para informações</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="">Formulário</a>
+                <a id="about" class="nav-link" href="?controller=cadastro&action=insertCadastro">Cadastro para registro</a>
                 </li>
             </ul>
 
