@@ -1,0 +1,16 @@
+C:\Ulbra\2022.1\PROGRAMAÇÃO ORIENTADA A OBJETOS\Aula04 - Semipresencial e Atividades\Livraria\bin\Debug\net5.0\Livraria.exe
+C:\Ulbra\2022.1\PROGRAMAÇÃO ORIENTADA A OBJETOS\Aula04 - Semipresencial e Atividades\Livraria\bin\Debug\net5.0\Livraria.deps.json
+C:\Ulbra\2022.1\PROGRAMAÇÃO ORIENTADA A OBJETOS\Aula04 - Semipresencial e Atividades\Livraria\bin\Debug\net5.0\Livraria.runtimeconfig.json
+C:\Ulbra\2022.1\PROGRAMAÇÃO ORIENTADA A OBJETOS\Aula04 - Semipresencial e Atividades\Livraria\bin\Debug\net5.0\Livraria.runtimeconfig.dev.json
+C:\Ulbra\2022.1\PROGRAMAÇÃO ORIENTADA A OBJETOS\Aula04 - Semipresencial e Atividades\Livraria\bin\Debug\net5.0\Livraria.dll
+C:\Ulbra\2022.1\PROGRAMAÇÃO ORIENTADA A OBJETOS\Aula04 - Semipresencial e Atividades\Livraria\bin\Debug\net5.0\ref\Livraria.dll
+C:\Ulbra\2022.1\PROGRAMAÇÃO ORIENTADA A OBJETOS\Aula04 - Semipresencial e Atividades\Livraria\bin\Debug\net5.0\Livraria.pdb
+C:\Ulbra\2022.1\PROGRAMAÇÃO ORIENTADA A OBJETOS\Aula04 - Semipresencial e Atividades\Livraria\obj\Debug\net5.0\Livraria.csproj.AssemblyReference.cache
+C:\Ulbra\2022.1\PROGRAMAÇÃO ORIENTADA A OBJETOS\Aula04 - Semipresencial e Atividades\Livraria\obj\Debug\net5.0\Livraria.GeneratedMSBuildEditorConfig.editorconfig
+C:\Ulbra\2022.1\PROGRAMAÇÃO ORIENTADA A OBJETOS\Aula04 - Semipresencial e Atividades\Livraria\obj\Debug\net5.0\Livraria.AssemblyInfoInputs.cache
+C:\Ulbra\2022.1\PROGRAMAÇÃO ORIENTADA A OBJETOS\Aula04 - Semipresencial e Atividades\Livraria\obj\Debug\net5.0\Livraria.AssemblyInfo.cs
+C:\Ulbra\2022.1\PROGRAMAÇÃO ORIENTADA A OBJETOS\Aula04 - Semipresencial e Atividades\Livraria\obj\Debug\net5.0\Livraria.csproj.CoreCompileInputs.cache
+C:\Ulbra\2022.1\PROGRAMAÇÃO ORIENTADA A OBJETOS\Aula04 - Semipresencial e Atividades\Livraria\obj\Debug\net5.0\Livraria.dll
+C:\Ulbra\2022.1\PROGRAMAÇÃO ORIENTADA A OBJETOS\Aula04 - Semipresencial e Atividades\Livraria\obj\Debug\net5.0\ref\Livraria.dll
+C:\Ulbra\2022.1\PROGRAMAÇÃO ORIENTADA A OBJETOS\Aula04 - Semipresencial e Atividades\Livraria\obj\Debug\net5.0\Livraria.pdb
+C:\Ulbra\2022.1\PROGRAMAÇÃO ORIENTADA A OBJETOS\Aula04 - Semipresencial e Atividades\Livraria\obj\Debug\net5.0\Livraria.genruntimeconfig.cache
