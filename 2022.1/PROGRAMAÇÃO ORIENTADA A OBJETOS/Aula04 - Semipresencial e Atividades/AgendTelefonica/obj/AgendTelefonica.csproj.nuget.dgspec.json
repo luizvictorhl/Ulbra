@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zuera\\Desktop\\Ulbra\\2022.1\\PROGRAMAÇÃO ORIENTADA A OBJETOS\\Aula04Atividades\\Aula04Atividades.csproj": {}
+    "C:\\Ulbra\\2022.1\\PROGRAMAÇÃO ORIENTADA A OBJETOS\\AgendTelefonica\\AgendTelefonica.csproj": {}
   },
   "projects": {
-    "C:\\Users\\zuera\\Desktop\\Ulbra\\2022.1\\PROGRAMAÇÃO ORIENTADA A OBJETOS\\Aula04Atividades\\Aula04Atividades.csproj": {
+    "C:\\Ulbra\\2022.1\\PROGRAMAÇÃO ORIENTADA A OBJETOS\\AgendTelefonica\\AgendTelefonica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zuera\\Desktop\\Ulbra\\2022.1\\PROGRAMAÇÃO ORIENTADA A OBJETOS\\Aula04Atividades\\Aula04Atividades.csproj",
-        "projectName": "Aula04Atividades",
-        "projectPath": "C:\\Users\\zuera\\Desktop\\Ulbra\\2022.1\\PROGRAMAÇÃO ORIENTADA A OBJETOS\\Aula04Atividades\\Aula04Atividades.csproj",
+        "projectUniqueName": "C:\\Ulbra\\2022.1\\PROGRAMAÇÃO ORIENTADA A OBJETOS\\AgendTelefonica\\AgendTelefonica.csproj",
+        "projectName": "AgendTelefonica",
+        "projectPath": "C:\\Ulbra\\2022.1\\PROGRAMAÇÃO ORIENTADA A OBJETOS\\AgendTelefonica\\AgendTelefonica.csproj",
         "packagesPath": "C:\\Users\\zuera\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zuera\\Desktop\\Ulbra\\2022.1\\PROGRAMAÇÃO ORIENTADA A OBJETOS\\Aula04Atividades\\obj\\",
+        "outputPath": "C:\\Ulbra\\2022.1\\PROGRAMAÇÃO ORIENTADA A OBJETOS\\AgendTelefonica\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\zuera\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\zuera\\Desktop\\Ulbra\\2022.1\\PROGRAMAÇÃO ORIENTADA A OBJETOS\\Aula04Atividades\\Aula04Atividades.csproj",
-      "projectName": "Aula04Atividades",
-      "projectPath": "C:\\Users\\zuera\\Desktop\\Ulbra\\2022.1\\PROGRAMAÇÃO ORIENTADA A OBJETOS\\Aula04Atividades\\Aula04Atividades.csproj",
+      "projectUniqueName": "C:\\Users\\zuera\\OneDrive\\Área de Trabalho\\Supermercado\\Supermercado.csproj",
+      "projectName": "Supermercado",
+      "projectPath": "C:\\Users\\zuera\\OneDrive\\Área de Trabalho\\Supermercado\\Supermercado.csproj",
       "packagesPath": "C:\\Users\\zuera\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\zuera\\Desktop\\Ulbra\\2022.1\\PROGRAMAÇÃO ORIENTADA A OBJETOS\\Aula04Atividades\\obj\\",
+      "outputPath": "C:\\Users\\zuera\\OneDrive\\Área de Trabalho\\Supermercado\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\zuera\\AppData\\Roaming\\NuGet\\NuGet.Config"
