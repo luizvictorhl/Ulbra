@@ -22,43 +22,27 @@
 
 </head>
 <body>
-    
     <header class="p-5 text-center">
     <h1>Meu header</h1>
     </header>
 
     <section class="row">
         <nav class="col-md-4">
-
-                <h3>Minha nav</h3>
-                <p>Descrição da minha nav...</p>
+            <h3>Minha nav</h3>
+            <p>Descrição da minha nav...</p>
             <ul class="nav flex-column">
                 <li class="nav-item">
-                    <a class="nav-link" href="?controller=site&action=home">Home</a>
+                    <a class="nav-link" href="?page=home">Home</a>
                 </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="?controller=site&action=about">Sobre</a>
+                <li>
+                    <a class="nav-link" href="?page=about">Sobre</a>
                 </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="?controller=site&action=products">Produtos</a>
+                <li>
+                    <a class="nav-link" href="?page=products">Produtos</a>
                 </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="?controller=site&action=contact">Contato</a>
+                <li>
+                    <a class="nav-link" href="?page=contact">Contato</a>
                 </li>
-
-                    <h3>Clientes</h3>
-                <li class="nav-item">
-                    <a class="nav-link" href="?controller=client&action=insertClient">Cadastro</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="?controller=client&action=listClients">Listar Clientes</a>
-                </li>
-
             </ul>
-
         </nav>
         <article class="col-md-8">

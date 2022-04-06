@@ -46,6 +46,10 @@
                         case 'insertClientAction':
                             $client -> insertClientAction();
                         break;
+
+                        case 'listClients':
+                            $client -> listClients();
+                        break;
                     }
                 }
 
