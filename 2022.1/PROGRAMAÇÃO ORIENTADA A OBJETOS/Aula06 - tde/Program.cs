@@ -37,22 +37,22 @@ namespace Aula06___tde
                         controle.criarCliente();
                         break;
                     case "2" :
-                        controle.apresentarListaCliente();
+                        controle.apresentarListClient();
                         break;
                     case "3" :
-                        controle.apresentarClienteEditado();
+                        controle.apresentarClientEdit();
                         break;
                     case "4" :
-                        controle.apresentarClienteRemovido();
+                        controle.apresentarRemoveClient();
                     break;
                     case "5" :
                         controle.criarCobranca();
                     break;
                     case "6" :
-                        controle.apresentarListaCobrancas();
+                        controle.apresentarCobrancas();
                     break;
                     case "7" :
-                        controle.escolherCobrancaPagamento();
+                        controle.escolherCobrancaPagar();
                     break;
                 }
 
