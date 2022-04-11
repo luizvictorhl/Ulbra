@@ -1,0 +1,10 @@
+is_global = true
+build_property.TargetFramework = net5.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.PublishSingleFile = 
+build_property.IncludeAllContentForSelfExtract = 
+build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
+build_property.RootNamespace = Aula06___tde
+build_property.ProjectDir = c:\Users\zuera\Desktop\Ulbra\2022.1\PROGRAMAÇÃO ORIENTADA A OBJETOS\Aula06 - tde\
