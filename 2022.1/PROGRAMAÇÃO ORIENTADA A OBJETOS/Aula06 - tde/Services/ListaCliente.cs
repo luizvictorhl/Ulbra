@@ -7,25 +7,23 @@ namespace Aula06___tde.Services
     {
         List<Cliente> listaDeCliente = new List<Cliente>();
         
-        /*Add clientes*/
 
         public void addCliente(Cliente cliente)
         {
             listaDeCliente.Add(cliente);
         }
-        /*Apresenta o tamanho da lista de clientes*/
 
         public int tamanhoLista()            
         {
             return listaDeCliente.Count;
         }
-        /*Apresenta os clientes cadastrados */
+      
 
         public List<Cliente> listarClientes()
         {
             return listaDeCliente;    
         }
-        /*Editar clientes cadastrados*/
+        
         
         public string editarCliente(string idCliente, string nomeEditado, string telefoneEditado, 
         string cpfEditado, string enderecoEditado)
@@ -35,7 +33,7 @@ namespace Aula06___tde.Services
             
             if(clienteEditar == null)
             {
-                return "ERRO cliente enexistente!";
+                return "ERRO cliente não existe!";
             }
 
             clienteEditar.Nome = nomeEditado;
@@ -45,7 +43,7 @@ namespace Aula06___tde.Services
 
             return "Contato editado com sucesso!";
         }
-        /*Remover cliente*/
+       
         
         public string removerCliente(string idRemover)
         {
@@ -53,7 +51,7 @@ namespace Aula06___tde.Services
 
             if (clienteRemovido.Equals(-1))
             {
-                return "ERRO, cliente inexistente";
+                return "ERRO, cliente não existe";
             }
 
             listaDeCliente.RemoveAt(clienteRemovido);

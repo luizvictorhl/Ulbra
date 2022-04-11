@@ -8,27 +8,23 @@ namespace Aula06___tde.Services
     {
         List<Cobranca> listaDeCobranca = new List<Cobranca>();
 
-        /*Apresenta o tamanho da lista de cobranças*/
 
         public int tamanhoLista()            
         {
             return listaDeCobranca.Count;
         }
-        /*Retorna as cobranças cadastradas */
 
         public List<Cobranca> listarCobrancas()
         {
             return listaDeCobranca;    
         }
 
-        /*Add cobranças*/
 
         public void addCobranca(Cobranca cobranca)
         {
             listaDeCobranca.Add(cobranca);
         }
 
-        /*Efetuar pagamento*/
 
         public string efetuarPagamento(string idCobranca)
         {

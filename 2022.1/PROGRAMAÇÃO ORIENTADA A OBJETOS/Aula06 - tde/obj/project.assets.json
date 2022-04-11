@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Ulbra\\2022.1\\PROGRAMAÇÃO ORIENTADA A OBJETOS\\Aula06 - tde\\Aula06 - tde.csproj",
+      "projectUniqueName": "C:\\Users\\zuera\\Desktop\\Ulbra\\2022.1\\PROGRAMAÇÃO ORIENTADA A OBJETOS\\Aula06 - tde\\Aula06 - tde.csproj",
       "projectName": "Aula06 - tde",
-      "projectPath": "C:\\Ulbra\\2022.1\\PROGRAMAÇÃO ORIENTADA A OBJETOS\\Aula06 - tde\\Aula06 - tde.csproj",
+      "projectPath": "C:\\Users\\zuera\\Desktop\\Ulbra\\2022.1\\PROGRAMAÇÃO ORIENTADA A OBJETOS\\Aula06 - tde\\Aula06 - tde.csproj",
       "packagesPath": "C:\\Users\\zuera\\.nuget\\packages\\",
-      "outputPath": "C:\\Ulbra\\2022.1\\PROGRAMAÇÃO ORIENTADA A OBJETOS\\Aula06 - tde\\obj\\",
+      "outputPath": "C:\\Users\\zuera\\Desktop\\Ulbra\\2022.1\\PROGRAMAÇÃO ORIENTADA A OBJETOS\\Aula06 - tde\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\zuera\\AppData\\Roaming\\NuGet\\NuGet.Config"

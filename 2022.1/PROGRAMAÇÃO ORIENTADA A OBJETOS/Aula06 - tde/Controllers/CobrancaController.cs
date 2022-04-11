@@ -24,7 +24,7 @@ namespace Aula06___tde.Controllers
       }
       Console.WriteLine("Digite o nome do cliente: ");
       string nome_C = Console.ReadLine();
-      Console.WriteLine("Digite o número do cliente: ");
+      Console.WriteLine("Digite o telefone do cliente: ");
       string numero_C = Console.ReadLine();
       Console.WriteLine("Digite o CPF do cliente: ");
       string cpf_C = Console.ReadLine();
