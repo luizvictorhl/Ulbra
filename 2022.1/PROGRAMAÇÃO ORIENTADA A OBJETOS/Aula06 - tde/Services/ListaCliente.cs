@@ -25,7 +25,7 @@ namespace Aula06___tde.Services
         }
         
         
-        public string editarCliente(string idCliente, string nomeEditado, string telefoneEditado, 
+        public string editClient(string idCliente, string nomeEditado, string telefoneEditado, 
         string cpfEditado, string enderecoEditado)
         {
             Cliente clienteEditar = null;
@@ -45,7 +45,7 @@ namespace Aula06___tde.Services
         }
        
         
-        public string removerCliente(string idRemover)
+        public string removeCliente(string idRemover)
         {
             int clienteRemovido = listaDeCliente.FindIndex(c => c.Id.Equals(idRemover));
 

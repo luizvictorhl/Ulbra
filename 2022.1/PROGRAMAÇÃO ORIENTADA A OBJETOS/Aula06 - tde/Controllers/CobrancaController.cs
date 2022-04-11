@@ -8,19 +8,19 @@ namespace Aula06___tde.Controllers
 {
   public class ControleClienteCobranca
   {
-    ListaCliente minhaListaCliente = new ListaCliente();
-    ListaCobranca minhaListaCobranca = new ListaCobranca();
+    ListaCliente myListClient = new ListaCliente();
+    ListaCobranca myListCobranca = new ListaCobranca();
 
     public void criarCliente()
     {
       string id_C = "";
-      if (minhaListaCliente.tamanhoLista().Equals(0))
+      if (myListClient.tamanhoLista().Equals(0))
       {
-        id_C = (minhaListaCliente.tamanhoLista() + 1).ToString();
+        id_C = (myListClient.tamanhoLista() + 1).ToString();
       }
       else
       {
-        id_C = criarIdCliente();
+        id_C = criarIdClient();
       }
       Console.WriteLine("Digite o nome do cliente: ");
       string nome_C = Console.ReadLine();
@@ -31,15 +31,15 @@ namespace Aula06___tde.Controllers
       Console.WriteLine("Digite o endereço do cliente: ");
       string endereco_C = Console.ReadLine();
 
-      minhaListaCliente.addCliente(new Cliente(id_C, nome_C, numero_C, cpf_C, endereco_C));
+      myListClient.addCliente(new Cliente(id_C, nome_C, numero_C, cpf_C, endereco_C));
 
       Console.WriteLine("Cliente adicionado com sucesso!\n");
 
     }
 
-    public string criarIdCliente()
+    public string criarIdClient()
     {
-      List<Cliente> clientes = minhaListaCliente.listarClientes();
+      List<Cliente> clientes = myListClient.listarClientes();
       Cliente lastCliente = clientes.Last();
       string idLastCliente = lastCliente.Id;
       int idInt = int.Parse(idLastCliente);
@@ -50,36 +50,36 @@ namespace Aula06___tde.Controllers
       return novoId;
     }
 
-    public void apresentarListaCliente()
+    public void apresentarListClient()
     {
-      List<Cliente> clientes = minhaListaCliente.listarClientes();
+      List<Cliente> clientes = myListClient.listarClientes();
       if (clientes.Count == 0)
       {
         Console.WriteLine("A lista de clientes está vazia");
       }
       else
       {
-        foreach (var item in minhaListaCliente.listarClientes())
+        foreach (var item in myListClient.listarClientes())
         {
           Console.WriteLine(item.getDescription());
         }
-        Console.WriteLine("Numero de clientes cadastrados: " + minhaListaCliente.tamanhoLista());
+        Console.WriteLine("Numero de clientes cadastrados: " + myListClient.tamanhoLista());
       }
     }
 
-    public void apresentarClienteEditado()
+    public void apresentarClientEdit()
     {
-      if (minhaListaCliente.tamanhoLista().Equals(0))
+      if (myListClient.tamanhoLista().Equals(0))
       {
         Console.WriteLine("Lista vazia, para poder editar e necessario possuir clientes cadastrados");
       }
       else
       {
         Console.WriteLine("Digite o numero do id do cliente a ser editado: ");
-        apresentarListaCliente();
+        apresentarListClient();
         string idClienteEditar = Console.ReadLine();
 
-        foreach (Cliente item in minhaListaCliente.listarClientes())
+        foreach (Cliente item in myListClient.listarClientes())
         {
           if (item.Id.Equals(idClienteEditar))
           {
@@ -92,7 +92,7 @@ namespace Aula06___tde.Controllers
             Console.WriteLine("Digite o novo endereco: ");
             string novoEndereco = Console.ReadLine();
 
-            string retorno = minhaListaCliente.editarCliente(idClienteEditar,
+            string retorno = myListClient.editClient(idClienteEditar,
             novoNome, novoTelefone, novoCpf, novoEndereco);
             Console.WriteLine(retorno);
             return;
@@ -101,25 +101,25 @@ namespace Aula06___tde.Controllers
       }
     }
 
-    public void apresentarClienteRemovido()
+    public void apresentarRemoveClient()
     {
-      if (minhaListaCliente.tamanhoLista().Equals(0))
+      if (myListClient.tamanhoLista().Equals(0))
       {
         Console.WriteLine("Lista vazia, para poder remover e necessario possuir clientes cadastrados");
       }
       else
       {
         Console.WriteLine("Digite o id do cliente a ser removido: ");
-        apresentarListaCliente();
+        apresentarListClient();
         string idClienteRemover = Console.ReadLine();
 
-        List<Cobranca> cobrancas = minhaListaCobranca.listarCobrancas();
+        List<Cobranca> cobrancas = myListCobranca.listarCobrancas();
         Cobranca cobranca = null;
         cobranca = cobrancas.Find(c => c.Cliente_.Id.Equals(idClienteRemover));
 
         if (cobranca == null)
         {
-          string retorno = minhaListaCliente.removerCliente(idClienteRemover);
+          string retorno = myListClient.removeCliente(idClienteRemover);
           Console.WriteLine(retorno);
         }
         else
@@ -131,16 +131,16 @@ namespace Aula06___tde.Controllers
 
     public void criarCobranca()
     {
-      if (minhaListaCliente.tamanhoLista().Equals(0))
+      if (myListClient.tamanhoLista().Equals(0))
       {
         Console.WriteLine("Lista vazia, para poder adicionar uma cobrança é necessário possuir clientes cadastrados.");
       }
       else
       {
         Console.WriteLine("Escolha o id do cliente que recebera essa cobrança: ");
-        apresentarListaCliente();
+        apresentarListClient();
         string idCliente = Console.ReadLine();
-        List<Cliente> clientes = minhaListaCliente.listarClientes();
+        List<Cliente> clientes = myListClient.listarClientes();
         Cliente clienteDevedor = null;
         clienteDevedor = clientes.Find(c => c.Id.Equals(idCliente));
         if (clienteDevedor == null)
@@ -149,7 +149,7 @@ namespace Aula06___tde.Controllers
         }
         else
         {
-          string id_Cobranca = (minhaListaCobranca.tamanhoLista() + 1).ToString();
+          string id_Cobranca = (myListCobranca.tamanhoLista() + 1).ToString();
           Console.WriteLine("Digite a data de emissão da cobrança ");
           string novaDataEmissao = Console.ReadLine();
           DateTime dataEmissao = Convert.ToDateTime(novaDataEmissao);
@@ -160,40 +160,40 @@ namespace Aula06___tde.Controllers
           string novoValor = Console.ReadLine();
           double valorCobrado = Convert.ToDouble(novoValor);
 
-          minhaListaCobranca.addCobranca(new Cobranca(id_Cobranca, dataEmissao, dataVencimento, valorCobrado, clienteDevedor));
+          myListCobranca.addCobranca(new Cobranca(id_Cobranca, dataEmissao, dataVencimento, valorCobrado, clienteDevedor));
 
           Console.WriteLine("Cobrança cadastrada com sucesso!\n");
         }
       }
     }
 
-    public void escolherCobrancaPagamento()
+    public void escolherCobrancaPagar()
     {
-      if (minhaListaCliente.tamanhoLista().Equals(0))
+      if (myListClient.tamanhoLista().Equals(0))
       {
-        Console.WriteLine("Lista vazia, para poder efetuar um pagamento é necessário possuir clientes e cobranças cadastrados.");
+        Console.WriteLine("Lista vazia, para poder efetuar um PAGAMENTO é necessário possuir CLIENTES e COBRANÇAS cadastrados.");
       }
       else
       {
-        Console.WriteLine("Digite o id da cobrança em que será realizado o pagamento ");
-        apresentarListaCobrancas();
+        Console.WriteLine("Digite o ID da cobrança em que será realizado o pagamento: ");
+        apresentarCobrancas();
         string idCobranca = Console.ReadLine();
 
-        string retorno = minhaListaCobranca.efetuarPagamento(idCobranca);
+        string retorno = myListCobranca.efetuarPagamento(idCobranca);
         Console.WriteLine(retorno);
       }
     }
 
-    public void apresentarListaCobrancas()
+    public void apresentarCobrancas()
     {
-      List<Cobranca> cobrancas = minhaListaCobranca.listarCobrancas();
+      List<Cobranca> cobrancas = myListCobranca.listarCobrancas();
       if (cobrancas.Count == 0)
       {
-        Console.WriteLine("A lista de cobranças está vazia");
+        Console.WriteLine("A lista de cobranças VAZIA!");
       }
       else
       {
-        foreach (var item in minhaListaCobranca.listarCobrancas())
+        foreach (var item in myListCobranca.listarCobrancas())
         {
           Console.WriteLine(item.getDescription());
         }
