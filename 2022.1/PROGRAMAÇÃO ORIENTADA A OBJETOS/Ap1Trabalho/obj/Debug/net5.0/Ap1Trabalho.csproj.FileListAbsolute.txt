@@ -1,0 +1,16 @@
+C:\Users\zuera\Desktop\Ap1Trabalho\bin\Debug\net5.0\Ap1Trabalho.exe
+C:\Users\zuera\Desktop\Ap1Trabalho\bin\Debug\net5.0\Ap1Trabalho.deps.json
+C:\Users\zuera\Desktop\Ap1Trabalho\bin\Debug\net5.0\Ap1Trabalho.runtimeconfig.json
+C:\Users\zuera\Desktop\Ap1Trabalho\bin\Debug\net5.0\Ap1Trabalho.runtimeconfig.dev.json
+C:\Users\zuera\Desktop\Ap1Trabalho\bin\Debug\net5.0\Ap1Trabalho.dll
+C:\Users\zuera\Desktop\Ap1Trabalho\bin\Debug\net5.0\ref\Ap1Trabalho.dll
+C:\Users\zuera\Desktop\Ap1Trabalho\bin\Debug\net5.0\Ap1Trabalho.pdb
+C:\Users\zuera\Desktop\Ap1Trabalho\obj\Debug\net5.0\Ap1Trabalho.csproj.AssemblyReference.cache
+C:\Users\zuera\Desktop\Ap1Trabalho\obj\Debug\net5.0\Ap1Trabalho.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zuera\Desktop\Ap1Trabalho\obj\Debug\net5.0\Ap1Trabalho.AssemblyInfoInputs.cache
+C:\Users\zuera\Desktop\Ap1Trabalho\obj\Debug\net5.0\Ap1Trabalho.AssemblyInfo.cs
+C:\Users\zuera\Desktop\Ap1Trabalho\obj\Debug\net5.0\Ap1Trabalho.csproj.CoreCompileInputs.cache
+C:\Users\zuera\Desktop\Ap1Trabalho\obj\Debug\net5.0\Ap1Trabalho.dll
+C:\Users\zuera\Desktop\Ap1Trabalho\obj\Debug\net5.0\ref\Ap1Trabalho.dll
+C:\Users\zuera\Desktop\Ap1Trabalho\obj\Debug\net5.0\Ap1Trabalho.pdb
+C:\Users\zuera\Desktop\Ap1Trabalho\obj\Debug\net5.0\Ap1Trabalho.genruntimeconfig.cache
