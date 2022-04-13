@@ -12,13 +12,13 @@ namespace Aula06___tde
             string  operador ;
 
             do{
-                Console.WriteLine("\nDigite 1 para add um cliente: ");
-                Console.WriteLine("Digite 2 para listar os clientes: " );
-                Console.WriteLine("Digite 3 para editar um cliente: ");
-                Console.WriteLine("Digite 4 para excluir um cliente: ");
-                Console.WriteLine("Digite 5 para add uma cobrança: ");
-                Console.WriteLine("Digite 6 para listar as cobranças: ");
-                Console.WriteLine("Digite 7 para efetuar o pagamento de uma cobrança: ");
+                Console.WriteLine("Digite 1 para adicionar um cliente: \n");
+                Console.WriteLine("Digite 2 para listar os clientes: \n" );
+                Console.WriteLine("Digite 3 para editar um cliente: \n");
+                Console.WriteLine("Digite 4 para excluir um cliente: \n");
+                Console.WriteLine("Digite 5 para adicionar uma cobrança: \n");
+                Console.WriteLine("Digite 6 para listar as cobranças: \n");
+                Console.WriteLine("Digite 7 para efetuar o pagamento de uma cobrança: \n");
                 Console.WriteLine("Digite 0 para encerrar: \n");
 
                 string  resposta  =  Console.ReadLine ();
@@ -27,7 +27,7 @@ namespace Aula06___tde
 
                 while(operador != "1" && operador != "2" && operador != "3" && operador != "4" && operador != "5" && operador != "6" && operador != "7" && operador != "0")
                 {   
-                    Console.WriteLine("Operação invalida digite novamente");
+                    Console.WriteLine("Operação invalida, digite novamente!");
                     resposta = Console.ReadLine();
                     operador = resposta;
                 }

@@ -55,7 +55,7 @@ namespace Aula06___tde.Controllers
       List<Cliente> clientes = myListClient.listarClientes();
       if (clientes.Count == 0)
       {
-        Console.WriteLine("A lista de clientes está vazia");
+        Console.WriteLine("A lista de clientes está vazia!");
       }
       else
       {
@@ -71,7 +71,7 @@ namespace Aula06___tde.Controllers
     {
       if (myListClient.tamanhoLista().Equals(0))
       {
-        Console.WriteLine("Lista vazia, para poder editar e necessario possuir clientes cadastrados");
+        Console.WriteLine("Lista vazia, para poder editar e necessario possuir clientes cadastrados!");
       }
       else
       {
