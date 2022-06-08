@@ -1,0 +1,10 @@
+CRITICAL - 2022-06-07 18:14:32 --> syntax error, unexpected identifier "nav"
+in APPPATH/Views/templates/header.php on line 40.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('templates/header', [], true)
+ 3 APPPATH/Controllers/Site.php(13): view('templates/header')
+ 4 APPPATH/Controllers/Site.php(8): App\Controllers\Site->view()
+ 5 SYSTEMPATH/CodeIgniter.php(898): App\Controllers\Site->index()
+ 6 SYSTEMPATH/CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Site))
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
