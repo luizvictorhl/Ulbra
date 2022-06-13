@@ -1,0 +1,42 @@
+﻿<Properties StartupConfiguration="{C20B3E7F-D74D-4B0E-943C-9312238E6F3D}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/AlunoController.cs">
+    <Files>
+      <File FileName="Models/Repositories/IAlunoRepository.cs" Line="10" Column="38" />
+      <File FileName="Models/Repositories/AlunoRepository.cs" Line="40" Column="46" />
+      <File FileName="Models/Repositories/IUnitOfWork.cs" Line="9" Column="50" />
+      <File FileName="Models/Repositories/UnitOfWork.cs" Line="26" Column="10" />
+      <File FileName="Models/Domains/Aluno.cs" Line="12" Column="42" />
+      <File FileName="Types/AlunoMap.cs" Line="16" Column="27" />
+      <File FileName="Program.cs" Line="4" Column="29" />
+      <File FileName="Models/Repositories/DataContext.cs" Line="17" Column="61" />
+      <File FileName="Controllers/AlunoController.cs" Line="69" Column="49" />
+      <File FileName="ViewModels/AlunoCreate.cs" Line="11" Column="42" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="projetoCrud" expanded="True">
+            <Node name="projetoCrud" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="AlunoController.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True">
+                <Node name="Domains" expanded="True" />
+                <Node name="Repositories" expanded="True" />
+              </Node>
+              <Node name="Types" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.projetoCrud PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
