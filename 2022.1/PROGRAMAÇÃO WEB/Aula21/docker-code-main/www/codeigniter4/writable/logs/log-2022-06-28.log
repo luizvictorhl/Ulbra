@@ -1,0 +1,132 @@
+CRITICAL - 2022-06-28 17:15:19 --> Invalid file: client/listClients.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('client/listClients.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('client/listClients', [], true)
+ 3 APPPATH/Controllers/Client.php(18): view('client/listClients', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(898): App\Controllers\Client->listClient()
+ 5 SYSTEMPATH/CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Client))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-28 18:04:15 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: \App\Controllers\Admin/Contact::listContact
+in SYSTEMPATH/Router/Router.php on line 466.
+ 1 SYSTEMPATH/Router/Router.php(466): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\Admin/Contact::listContact')
+ 2 SYSTEMPATH/Router/Router.php(181): CodeIgniter\Router\Router->checkRoutes('admin/listContact')
+ 3 SYSTEMPATH/CodeIgniter.php(773): CodeIgniter\Router\Router->handle('admin/listContact')
+ 4 SYSTEMPATH/CodeIgniter.php(417): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-28 18:04:17 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: \App\Controllers\Admin/Contact::listContact
+in SYSTEMPATH/Router/Router.php on line 466.
+ 1 SYSTEMPATH/Router/Router.php(466): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\Admin/Contact::listContact')
+ 2 SYSTEMPATH/Router/Router.php(181): CodeIgniter\Router\Router->checkRoutes('admin/listContact')
+ 3 SYSTEMPATH/CodeIgniter.php(773): CodeIgniter\Router\Router->handle('admin/listContact')
+ 4 SYSTEMPATH/CodeIgniter.php(417): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-28 18:04:32 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: \App\Controllers\Admin/Contact::listContact
+in SYSTEMPATH/Router/Router.php on line 466.
+ 1 SYSTEMPATH/Router/Router.php(466): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\Admin/Contact::listContact')
+ 2 SYSTEMPATH/Router/Router.php(181): CodeIgniter\Router\Router->checkRoutes('admin/listContact')
+ 3 SYSTEMPATH/CodeIgniter.php(773): CodeIgniter\Router\Router->handle('admin/listContact')
+ 4 SYSTEMPATH/CodeIgniter.php(417): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-28 18:07:24 --> Invalid file: client/listClients.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('client/listClients.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('client/listClients', [], true)
+ 3 APPPATH/Controllers/Client.php(18): view('client/listClients', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(898): App\Controllers\Client->listClient()
+ 5 SYSTEMPATH/CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Client))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-28 18:13:47 --> Column 'email' cannot be null
+CRITICAL - 2022-06-28 18:13:47 --> Column 'email' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `contacts` (`name`, `email`, `message`, `status`) VALUES (\'Luiz Victor Hoffmann Likoski\', NULL, \'Olá,. meu nome é Luiz Victor\', \'0\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `contacts` (`name`, `email`, `message`, `status`) VALUES (\'Luiz Victor Hoffmann Likoski\', NULL, \'Olá,. meu nome é Luiz Victor\', \'0\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `contacts` (`name`, `email`, `message`, `status`) VALUES (\'Luiz Victor Hoffmann Likoski\', NULL, \'Olá,. meu nome é Luiz Victor\', \'0\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `contacts` (`name`, `email`, `message`, `status`) VALUES (:name:, :email:, :message:, :status:)', [...], false)
+ 5 SYSTEMPATH/Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH/Controllers/Contact.php(24): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH/CodeIgniter.php(898): App\Controllers\Contact->sendContactAction()
+10 SYSTEMPATH/CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contact))
+11 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-28 18:14:54 --> Column 'email' cannot be null
+CRITICAL - 2022-06-28 18:14:54 --> Column 'email' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `contacts` (`name`, `email`, `message`, `status`) VALUES (\'Luiz Victor Hoffmann Likoski\', NULL, \'Olá,. meu nome é Luiz Victor\', \'0\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `contacts` (`name`, `email`, `message`, `status`) VALUES (\'Luiz Victor Hoffmann Likoski\', NULL, \'Olá,. meu nome é Luiz Victor\', \'0\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `contacts` (`name`, `email`, `message`, `status`) VALUES (\'Luiz Victor Hoffmann Likoski\', NULL, \'Olá,. meu nome é Luiz Victor\', \'0\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `contacts` (`name`, `email`, `message`, `status`) VALUES (:name:, :email:, :message:, :status:)', [...], false)
+ 5 SYSTEMPATH/Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH/Controllers/Contact.php(24): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH/CodeIgniter.php(898): App\Controllers\Contact->sendContactAction()
+10 SYSTEMPATH/CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contact))
+11 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-28 18:16:17 --> Column 'email' cannot be null
+CRITICAL - 2022-06-28 18:16:17 --> Column 'email' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `contacts` (`name`, `email`, `message`, `status`) VALUES (\'Luiz Victor Hoffmann Likoski\', NULL, \'Olá,. meu nome é Luiz Victor\', \'0\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `contacts` (`name`, `email`, `message`, `status`) VALUES (\'Luiz Victor Hoffmann Likoski\', NULL, \'Olá,. meu nome é Luiz Victor\', \'0\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `contacts` (`name`, `email`, `message`, `status`) VALUES (\'Luiz Victor Hoffmann Likoski\', NULL, \'Olá,. meu nome é Luiz Victor\', \'0\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `contacts` (`name`, `email`, `message`, `status`) VALUES (:name:, :email:, :message:, :status:)', [...], false)
+ 5 SYSTEMPATH/Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH/Controllers/Contact.php(24): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH/CodeIgniter.php(898): App\Controllers\Contact->sendContactAction()
+10 SYSTEMPATH/CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contact))
+11 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-28 18:16:28 --> Column 'email' cannot be null
+CRITICAL - 2022-06-28 18:16:28 --> Column 'email' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `contacts` (`name`, `email`, `message`, `status`) VALUES (\'Luiz Victor Hoffmann Likoski\', NULL, \'Olá,. meu nome é Luiz Victor\', \'0\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `contacts` (`name`, `email`, `message`, `status`) VALUES (\'Luiz Victor Hoffmann Likoski\', NULL, \'Olá,. meu nome é Luiz Victor\', \'0\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `contacts` (`name`, `email`, `message`, `status`) VALUES (\'Luiz Victor Hoffmann Likoski\', NULL, \'Olá,. meu nome é Luiz Victor\', \'0\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `contacts` (`name`, `email`, `message`, `status`) VALUES (:name:, :email:, :message:, :status:)', [...], false)
+ 5 SYSTEMPATH/Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH/Controllers/Contact.php(24): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH/CodeIgniter.php(898): App\Controllers\Contact->sendContactAction()
+10 SYSTEMPATH/CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contact))
+11 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-28 18:19:03 --> Column 'email' cannot be null
+CRITICAL - 2022-06-28 18:19:03 --> Column 'email' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `contacts` (`name`, `email`, `message`, `status`) VALUES (\'Luiz Victor Hoffmann Likoski\', NULL, \'Primeiro envio!\', \'0\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `contacts` (`name`, `email`, `message`, `status`) VALUES (\'Luiz Victor Hoffmann Likoski\', NULL, \'Primeiro envio!\', \'0\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `contacts` (`name`, `email`, `message`, `status`) VALUES (\'Luiz Victor Hoffmann Likoski\', NULL, \'Primeiro envio!\', \'0\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `contacts` (`name`, `email`, `message`, `status`) VALUES (:name:, :email:, :message:, :status:)', [...], false)
+ 5 SYSTEMPATH/Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH/Controllers/Contact.php(24): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH/CodeIgniter.php(898): App\Controllers\Contact->sendContactAction()
+10 SYSTEMPATH/CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contact))
+11 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-28 18:20:55 --> Column 'email' cannot be null
+CRITICAL - 2022-06-28 18:20:55 --> Column 'email' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `contacts` (`name`, `email`, `message`, `status`) VALUES (\'Luiz Victor Hoffmann Likoski\', NULL, \'Primeiro envio!\', \'0\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `contacts` (`name`, `email`, `message`, `status`) VALUES (\'Luiz Victor Hoffmann Likoski\', NULL, \'Primeiro envio!\', \'0\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `contacts` (`name`, `email`, `message`, `status`) VALUES (\'Luiz Victor Hoffmann Likoski\', NULL, \'Primeiro envio!\', \'0\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `contacts` (`name`, `email`, `message`, `status`) VALUES (:name:, :email:, :message:, :status:)', [...], false)
+ 5 SYSTEMPATH/Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH/Controllers/Contact.php(24): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH/CodeIgniter.php(898): App\Controllers\Contact->sendContactAction()
+10 SYSTEMPATH/CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contact))
+11 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()

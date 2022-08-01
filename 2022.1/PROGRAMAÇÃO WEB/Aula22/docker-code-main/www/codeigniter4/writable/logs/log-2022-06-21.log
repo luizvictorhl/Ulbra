@@ -1,0 +1,72 @@
+ERROR - 2022-06-21 18:02:41 --> Column 'address' cannot be null
+CRITICAL - 2022-06-21 18:02:41 --> Column 'address' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `clients` (`name`, `email`, `phone`, `address`) VALUES (\'LUIZ VICTOR HOFFMANN LIKOSKI MARGARETH HOFFMANN LIKOSKI\', \'luizvictorcprs@gmail.com\', \'51998827525\', NULL)', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `clients` (`name`, `email`, `phone`, `address`) VALUES (\'LUIZ VICTOR HOFFMANN LIKOSKI MARGARETH HOFFMANN LIKOSKI\', \'luizvictorcprs@gmail.com\', \'51998827525\', NULL)')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `clients` (`name`, `email`, `phone`, `address`) VALUES (\'LUIZ VICTOR HOFFMANN LIKOSKI MARGARETH HOFFMANN LIKOSKI\', \'luizvictorcprs@gmail.com\', \'51998827525\', NULL)')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `clients` (`name`, `email`, `phone`, `address`) VALUES (:name:, :email:, :phone:, :address:)', [...], false)
+ 5 SYSTEMPATH/Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH/Controllers/Admin/Client.php(49): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH/CodeIgniter.php(898): App\Controllers\Admin\Client->insertClientAction()
+10 SYSTEMPATH/CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Client))
+11 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-06-21 18:03:14 --> Column 'address' cannot be null
+CRITICAL - 2022-06-21 18:03:14 --> Column 'address' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `clients` (`name`, `email`, `phone`, `address`) VALUES (\'LUIZ VICTOR HOFFMANN LIKOSKI MARGARETH HOFFMANN LIKOSKI\', \'luizvictorcprs@gmail.com\', \'51998827525\', NULL)', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(678): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `clients` (`name`, `email`, `phone`, `address`) VALUES (\'LUIZ VICTOR HOFFMANN LIKOSKI MARGARETH HOFFMANN LIKOSKI\', \'luizvictorcprs@gmail.com\', \'51998827525\', NULL)')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `clients` (`name`, `email`, `phone`, `address`) VALUES (\'LUIZ VICTOR HOFFMANN LIKOSKI MARGARETH HOFFMANN LIKOSKI\', \'luizvictorcprs@gmail.com\', \'51998827525\', NULL)')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `clients` (`name`, `email`, `phone`, `address`) VALUES (:name:, :email:, :phone:, :address:)', [...], false)
+ 5 SYSTEMPATH/Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH/Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH/Controllers/Admin/Client.php(49): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH/CodeIgniter.php(898): App\Controllers\Admin\Client->insertClientAction()
+10 SYSTEMPATH/CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Client))
+11 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-21 18:03:28 --> Invalid file: client/detailsClient.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('client/detailsClient.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('client/detailsClient', [], true)
+ 3 APPPATH/Controllers/Client.php(30): view('client/detailsClient', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(898): App\Controllers\Client->detailsClient('6')
+ 5 SYSTEMPATH/CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Client))
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-21 18:05:37 --> Undefined variable $client
+in APPPATH/Views/admin/client/detailsClient.php on line 8.
+ 1 APPPATH/Views/admin/client/detailsClient.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $client', 'APPPATH/Views/admin/client/detailsClient.php', 8)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/client/detailsClient.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('admin/client/detailsClient', [], true)
+ 5 APPPATH/Controllers/Admin/Client.php(30): view('admin/client/detailsClient', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(898): App\Controllers\Admin\Client->detailsClient('6')
+ 7 SYSTEMPATH/CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Client))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-21 18:06:07 --> Undefined array key "idClient"
+in APPPATH/Views/admin/client/detailsClient.php on line 8.
+ 1 APPPATH/Views/admin/client/detailsClient.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idClient"', 'APPPATH/Views/admin/client/detailsClient.php', 8)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/client/detailsClient.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('admin/client/detailsClient', [], true)
+ 5 APPPATH/Controllers/Admin/Client.php(30): view('admin/client/detailsClient', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(898): App\Controllers\Admin\Client->detailsClient('6')
+ 7 SYSTEMPATH/CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Client))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-21 18:06:56 --> Undefined array key "idClient"
+in APPPATH/Views/admin/client/detailsClient.php on line 8.
+ 1 APPPATH/Views/admin/client/detailsClient.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "idClient"', 'APPPATH/Views/admin/client/detailsClient.php', 8)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/admin/client/detailsClient.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('admin/client/detailsClient', [], true)
+ 5 APPPATH/Controllers/Admin/Client.php(30): view('admin/client/detailsClient', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(898): App\Controllers\Admin\Client->detailsClient('6')
+ 7 SYSTEMPATH/CodeIgniter.php(468): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Client))
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()

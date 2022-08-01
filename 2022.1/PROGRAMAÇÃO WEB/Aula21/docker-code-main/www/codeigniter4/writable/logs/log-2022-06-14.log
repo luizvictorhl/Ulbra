@@ -1,0 +1,47 @@
+CRITICAL - 2022-06-14 17:41:22 --> Class "App\Controllers\Controller" not found
+in APPPATH/Controllers/Client.php on line 7.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(284): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Client.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Client')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Client')
+ 5 SYSTEMPATH/CodeIgniter.php(848): class_exists('\\App\\Controllers\\Client', true)
+ 6 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-14 17:43:44 --> Class "App\Controllers\Controller" not found
+in APPPATH/Controllers/Client.php on line 7.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(284): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Client.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Client')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Client')
+ 5 SYSTEMPATH/CodeIgniter.php(848): class_exists('\\App\\Controllers\\Client', true)
+ 6 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-14 17:52:17 --> syntax error, unexpected token "echo"
+in APPPATH/Controllers/Client.php on line 18.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Client.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Client')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Client')
+ 4 SYSTEMPATH/CodeIgniter.php(848): class_exists('\\App\\Controllers\\Client', true)
+ 5 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-14 18:13:42 --> syntax error, unexpected token ";", expecting "]"
+in APPPATH/Controllers/Client.php on line 27.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Client.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Client')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Client')
+ 4 SYSTEMPATH/CodeIgniter.php(848): class_exists('\\App\\Controllers\\Client', true)
+ 5 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-14 19:40:34 --> syntax error, unexpected token "}"
+in APPPATH/Controllers/Admin/User.php on line 18.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Admin/User.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\User')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\User')
+ 4 SYSTEMPATH/CodeIgniter.php(848): class_exists('\\App\\Controllers\\Admin\\User', true)
+ 5 SYSTEMPATH/CodeIgniter.php(455): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
