@@ -1,0 +1,24 @@
+import {BrowserRouter} from 'react-router-dom'
+import {Routes} from 'react-router-dom'
+import {Route} from 'react-router-dom'
+import './App.css';
+import Home from './pages/Home';
+import Produtos from './pages/Produtos';
+import PageError from './pages/PageError';
+import Contato from './pages/Contato';
+
+function App() {
+  return(
+  <BrowserRouter>
+    <Routes>
+      <Route path='/home' element={<Home />}/>
+      <Route path='/produtos' element={<Produtos />} />
+      <Route path='/contato' element={<Contato />} />
+      <Route path='*' element={<PageErrorrror />} />
+
+    </Routes>
+  </BrowserRouter>
+  )
+}
+
+export default App;
