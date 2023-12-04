@@ -8,7 +8,7 @@ const db = mysql.createConnection({
     host: "localhost",
     user: "root",
     password: "password",
-    database:"bancoteste"
+    database:"usebanco_local"
 })
 
 db.connect((error) => {
@@ -20,6 +20,7 @@ db.connect((error) => {
 })
 
 app.get("/produtos", (req, res) => {
+    console.log(req)
     db.query("SELECT * FROM produtos", (error, result) => {
         if(error){
             res.status(500).send("erro ao executar a consulta")
@@ -36,11 +37,11 @@ app.post("/produtos", (req, res) => {
         descricao: req.body.descricao,
         preco: req.body.preco,
         nome_categoria: req.body.nome_categoria,
-        descricao_categoria: req.body.descricao_categoria,
+        descricao_categoria: req.body.descricao_categoria
     }
 
 
-    const sql = "INSERT INTO produtos SET ? :"
+    const sql = "INSERT INTO produtos SET ? ; "
 
     db.query(sql, registro, (error, result) =>{
     if(error){
@@ -49,8 +50,8 @@ app.post("/produtos", (req, res) => {
         res.json(result)
     }
 })
+})
 
 app.listen(port, () =>{
     console.log("Servidor rodando!")
-})
 })

@@ -7,31 +7,44 @@ function Form() {
   const [preco, setPreco] = useState('');
   const [imagem, setImagem] = useState('');
 
+  const [errorNome, setErrorNome] = useState('');
+  const [errorDescricao, setErrorDescricao] = useState('');
+  const [errorPreco, setErrorPreco] = useState('');
+  const [errorImagem, setErrorImagem] = useState('');
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Crie um objeto com os dados do formulário
+    if (!nome || !descricao || !preco || !imagem) {
+      setErrorNome(nome ? '' : 'Campo obrigatório');
+      setErrorDescricao(descricao ? '' : 'Campo obrigatório');
+      setErrorPreco(preco ? '' : 'Campo obrigatório');
+      setErrorImagem(imagem ? '' : 'Campo obrigatório');
+      return;
+    }
+
     const novoProduto = {
       name: nome,
       description: descricao,
-      price: parseFloat(preco), // Converta o preço para um número
+      price: parseFloat(preco),
       photo_url: imagem,
     };
 
     try {
-      // Faça a requisição POST para adicionar um novo produto
       await axios.post('http://localhost:3001/products', novoProduto);
 
-      // Limpe os campos do formulário
       setNome('');
       setDescricao('');
       setPreco('');
       setImagem('');
 
-      // Você pode adicionar uma mensagem de sucesso ou qualquer outra ação necessária aqui
+      setErrorNome('');
+      setErrorDescricao('');
+      setErrorPreco('');
+      setErrorImagem('');
+
       console.log('Produto adicionado com sucesso!');
     } catch (error) {
-      // Trate erros adequadamente
       console.error('Erro ao adicionar produto:', error);
     }
   };
@@ -85,18 +98,22 @@ function Form() {
           <div>
             <label>Nome:</label>
             <input type="text" value={nome} onChange={(e) => setNome(e.target.value)} />
+            <span className="error-message">{errorNome}</span>
           </div>
           <div>
             <label>Descrição:</label>
             <input type="text" value={descricao} onChange={(e) => setDescricao(e.target.value)} />
+            <span className="error-message">{errorDescricao}</span>
           </div>
           <div>
             <label>Preço:</label>
             <input type="text" value={preco} onChange={(e) => setPreco(e.target.value)} />
+            <span className="error-message">{errorPreco}</span>
           </div>
           <div>
             <label>Imagem:</label>
             <input type="text" value={imagem} onChange={(e) => setImagem(e.target.value)} />
+            <span className="error-message">{errorImagem}</span>
           </div>
           <button type="submit">Enviar</button>
         </form>
