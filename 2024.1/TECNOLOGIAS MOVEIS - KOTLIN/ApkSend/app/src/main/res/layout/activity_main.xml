@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+<TextView
+android:id="@+id/textEnvio"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Envio fácil!"
+android:textSize="24sp"
+    android:textStyle="bold"
+    android:paddingBottom="8dp"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent" />
+
+<ImageView
+android:id="@+id/imagem"
+android:layout_width="200dp"
+android:layout_height="200dp"
+android:src="@drawable/imgenvioapk"
+app:layout_constraintTop_toBottomOf="@id/textEnvio"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintBottom_toTopOf="@id/etAssunto" />
+
+<EditText
+android:id="@+id/etAssunto"
+android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:hint="Digite o assunto:"
+    android:textSize="18sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/imagem"/>
+
+<EditText
+android:id="@+id/etDestinatario"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:layout_marginTop="16dp"
+    android:hint="Digite o email:"
+    android:textSize="18sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/etAssunto" />
+
+<EditText
+android:id="@+id/etMensagem"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:layout_marginTop="16dp"
+android:hint="Digite a mensagem:"
+android:textSize="18sp"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintTop_toBottomOf="@id/etDestinatario" />
+
+<Button
+android:id="@+id/button"
+android:layout_width="0dp"
+android:layout_height="60dp"
+android:layout_marginTop="24dp"
+    android:text="Enviar e-mail"
+    android:textSize="18sp"
+    android:textColor="#FFFFFF"
+    android:background="@color/colorPrimary"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/etMensagem" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
