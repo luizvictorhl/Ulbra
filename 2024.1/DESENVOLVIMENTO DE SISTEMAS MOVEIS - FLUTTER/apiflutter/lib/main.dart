@@ -1,19 +1,55 @@
+import 'package:apiflutter/screen/login_screen.dart';
+import 'package:apiflutter/services/firebase/auth/firebase_auth_service.dart';
 import 'package:flutter/material.dart';
 import 'package:apiflutter/services/character_service.dart';
 import 'package:apiflutter/models/character.dart';
-
-void main() {
-  runApp(MyApp());
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
+import 'models/userModel.dart';
+//VOLTAR NO MINUTO 38 PARA VALIDAÇÃO DA AUTH
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+  options: DefaultFirebaseOptions.currentPlatform,
+  );
+  runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
+  const MyApp({super.key});
+
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: CharacterListScreen(),
+      debugShowCheckedModeBanner: false,
+      home: InitializeApp(),
+      );
+  }
+}
+
+class InitializeApp extends StatelessWidget {
+  final FirebaseAuthService _auth = FirebaseAuthService();
+  InitializeApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return StreamBuilder<UserModel>(stream: _auth.user, builder: (context, snapshot) {
+      if(snapshot.connectionState ==ConnectionState.waiting){
+        return const Center(child: CircularProgressIndicator(),
+        );
+      }
+
+      return LoginPage();
+      },
     );
   }
 }
+
 
 class CharacterListScreen extends StatefulWidget {
   @override
@@ -21,6 +57,7 @@ class CharacterListScreen extends StatefulWidget {
 }
 
 class _CharacterListScreenState extends State<CharacterListScreen> {
+  final FirebaseAuthService _auth = FirebaseAuthService();
   late Future<List<Character>> _charactersFuture;
   late List<Character> _characters = [];
   late List<Character> _filteredCharacters = [];
@@ -50,7 +87,11 @@ class _CharacterListScreenState extends State<CharacterListScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Listagem de personagens"),
+        title: const Text("Listagem de personagens"),
+        actions: [IconButton(onPressed: (){
+          _auth.signOut();
+          Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => LoginPage()));
+        }, icon: Icon(Icons.logout))],
       ),
       body: Column(
         children: [
@@ -58,7 +99,7 @@ class _CharacterListScreenState extends State<CharacterListScreen> {
             padding: const EdgeInsets.all(20),
             child: TextField(
               onChanged: _filterCharacters,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 border: OutlineInputBorder(),
                 labelText: "Filtrar",
               ),
@@ -69,12 +110,12 @@ class _CharacterListScreenState extends State<CharacterListScreen> {
               future: _charactersFuture,
               builder: (context, snapshot) {
                 if (snapshot.connectionState == ConnectionState.waiting) {
-                  return Center(child: CircularProgressIndicator());
+                  return const Center(child: CircularProgressIndicator());
                 } else if (snapshot.hasError) {
                   return Center(child: Text("Erro: ${snapshot.error}"));
                 } else {
                   return GridView.builder(
-                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2,
                       mainAxisSpacing: 10,
                       crossAxisSpacing: 10,
@@ -102,10 +143,10 @@ class _CharacterListScreenState extends State<CharacterListScreen> {
                                 width: 100,
                                 fit: BoxFit.cover,
                               ),
-                              SizedBox(height: 8),
+                              const SizedBox(height: 8),
                               Text(
                                 _filteredCharacters[index].name,
-                                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                                style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                               ),
                             ],
                           ),
@@ -122,7 +163,7 @@ class _CharacterListScreenState extends State<CharacterListScreen> {
     );
   }
 }
-
+//CHARACTER DETAIL
 class CharacterDetailScreen extends StatelessWidget {
   final Character character;
 
@@ -132,7 +173,7 @@ class CharacterDetailScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Detalhes do Personagem"),
+        title: const Text("Detalhes do Personagem"),
       ),
       body: Center(
         child: Column(
@@ -144,10 +185,10 @@ class CharacterDetailScreen extends StatelessWidget {
               width: 300,
               fit: BoxFit.contain,
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Text(
               character.name,
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+              style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
           ],
         ),
