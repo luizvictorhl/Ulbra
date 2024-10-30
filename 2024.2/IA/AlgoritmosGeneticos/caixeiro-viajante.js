@@ -1,31 +1,46 @@
-const distancias = [
-    [0, 2, 4, 3, 6, 8, 3, 5, 7, 9],  // Cidades 1 a outras
-    [2, 0, 4, 3, 7, 6, 5, 4, 8, 2],  // Cidades 2 a outras
-    [4, 4, 0, 3, 3, 5, 6, 2, 1, 7],  // Cidades 3 a outras
-    [3, 3, 3, 0, 3, 6, 4, 8, 9, 2],  // Cidades 4 a outras
-    [6, 7, 3, 3, 0, 5, 6, 4, 1, 3],  // Cidades 5 a outras
-    [8, 6, 5, 6, 5, 0, 7, 8, 9, 4],  // Cidades 6 a outras
-    [3, 5, 6, 4, 6, 7, 0, 2, 3, 5],  // Cidades 7 a outras
-    [5, 4, 2, 8, 4, 8, 2, 0, 6, 7],  // Cidades 8 a outras
-    [7, 8, 1, 9, 1, 9, 3, 6, 0, 2],  // Cidades 9 a outras
-    [9, 2, 7, 2, 3, 4, 5, 7, 2, 0]   // Cidades 10 a outras
+class Cidade {
+    constructor(x, y) {
+        this.x = x;
+        this.y = y;
+    }
+
+
+    distanciaPara(outraCidade) {
+        return Math.sqrt((this.x - outraCidade.x) ** 2 + (this.y - outraCidade.y) ** 2);
+    }
+}
+
+const cidades = [
+    new Cidade(56.5, 57.5),
+    new Cidade(2.5, 18.5),
+    new Cidade(34.5, 75.0),
+    new Cidade(94.5, 68.5),
+    new Cidade(84.5, 65.5),
+    new Cidade(88.0, 66.0),
+    new Cidade(2.5, 23.0),
+    new Cidade(52.5, 100.0),
+    new Cidade(58.0, 117.5),
+    new Cidade(65.0, 113.0)
 ];
+
 
 const tamanhoPopulacao = 200;
 const mutationRate = 0.01;
 const geracoes = 10000;
 
+
 function calcularDistanciaTotal(percurso) {
     let distanciaTotal = 0;
     for (let i = 0; i < percurso.length - 1; i++) {
-        distanciaTotal += distancias[percurso[i] - 1][percurso[i + 1] - 1];
+        distanciaTotal += cidades[percurso[i] - 1].distanciaPara(cidades[percurso[i + 1] - 1]);
     }
-    distanciaTotal += distancias[percurso[percurso.length - 1] - 1][percurso[0] - 1];
+    
+    distanciaTotal += cidades[percurso[percurso.length - 1] - 1].distanciaPara(cidades[percurso[0] - 1]);
     return distanciaTotal;
 }
 
 function criarIndividuo() {
-    const individuo = Array.from({ length: distancias.length }, (_, i) => i + 1);
+    const individuo = Array.from({ length: cidades.length }, (_, i) => i + 1);
     for (let i = individuo.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [individuo[i], individuo[j]] = [individuo[j], individuo[i]];
@@ -107,7 +122,6 @@ function algoritmoGenetico() {
             console.log(`Geração: ${geracao}, Melhor distância: ${melhorDistancia}`);
         }
 
-    
         if (melhorDistancia === 25) {
             console.log(`Melhor percurso encontrado na geração ${geracao}`);
             break;
