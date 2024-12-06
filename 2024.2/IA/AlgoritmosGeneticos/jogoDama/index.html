@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Damas</title>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="scripts/dama.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+
+        #checkersBoard {
+            background-color: #b58863;
+            border: 5px solid #3c3c3c;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .checker-square {
+            stroke: #3c3c3c;
+        }
+
+        .checker-square:nth-child(odd) {
+            fill: #f0d9b5;
+        }
+
+        .checker-square:nth-child(even) {
+            fill: #b58863;
+        }
+
+        .checker-piece {
+            cursor: pointer;
+            stroke: #000;
+            stroke-width: 2px;
+        }
+
+        .checker-piece.black {
+            fill: #333;
+        }
+
+        .checker-piece.red {
+            fill: #ff4444;
+        }
+
+        #controls {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="controls">
+        <button onclick="startGame({x: 0, y: 0}, 70, boardCanvas);">Novo jogo</button>
+        <button id="btnReplay" style="display:none;" onclick="replayAll({x: 0, y: 0}, 70, boardCanvas)">View Replay</button>
+    
+    </div>
+    <svg id="checkersBoard" width="560" height="560"></svg>
+
+    <script type="text/javascript">
+        var boardCanvas = d3.select("#checkersBoard");
+        startGame({x: 0, y: 0}, 70, boardCanvas);
+    </script>
+</body>
+</html>
